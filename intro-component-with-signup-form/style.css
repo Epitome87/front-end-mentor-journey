@@ -1,3 +1,5 @@
+/* Challenge can be found here: https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1 */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
@@ -23,7 +25,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1128px;
+  /* max-width: 1440px; */
   margin: 0 auto;
 }
 
@@ -55,22 +57,33 @@ body {
   padding: 20px;
   text-align: center;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px rgba(0, 0, 0, 0.25);
 }
 
 .form {
   background-color: #fff;
-  padding: 5px;
-  border-radius: 5px;
+  padding: 20px 20px 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px rgba(0, 0, 0, 0.25);
 }
 
 .form > input {
   display: block;
-  padding: 10px;
-  margin: 20px auto;
-  height: 40px;
-  width: 90%;
+  font-weight: bold;
+  padding: 10px 25px 10px 25px;
+  margin: 25px auto;
+  height: 60px;
+  width: 95%;
   border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.form input:focus,
+.form input:hover
+/* .form input:valid  */ {
+  /* background-color: pink; */
+  border-color: var(--accent-color-blue);
 }
 
 button {
@@ -82,27 +95,45 @@ button {
   display: block;
   padding: 10px;
   margin: 0px auto;
-  width: 90%;
+  width: 95%;
   border-radius: 5px;
+  border-color: var(--primary-color-green);
 }
 
 .terms {
+  font-size: 0.75rem;
   color: gray;
   text-align: center;
+  margin-top: 15px;
 }
 
 .terms a {
   color: var(--primary-color-red);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 @media (min-width: 800px) {
+  .container {
+    border: 5px solid green;
+  }
   .row {
     display: flex;
     height: 90vh;
     justify-content: center;
     align-items: center;
+    border: 5px solid red;
   }
   .col {
-    width: 100%;
+    flex-basis: 40%;
+    /* width: 100%; */
+    text-align: left;
+  }
+  .hero h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  .hero p {
+    font-size: 1.25rem;
   }
 }
