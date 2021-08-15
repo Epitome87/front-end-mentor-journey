@@ -80,9 +80,7 @@ body {
 }
 
 .form input:focus,
-.form input:hover
-/* .form input:valid  */ {
-  /* background-color: pink; */
+.form input:hover {
   border-color: var(--accent-color-blue);
 }
 
@@ -97,7 +95,11 @@ button {
   margin: 0px auto;
   width: 95%;
   border-radius: 5px;
-  border-color: var(--primary-color-green);
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.98);
 }
 
 .terms {
@@ -114,15 +116,11 @@ button {
 }
 
 @media (min-width: 800px) {
-  .container {
-    border: 5px solid green;
-  }
   .row {
     display: flex;
     height: 90vh;
     justify-content: center;
     align-items: center;
-    border: 5px solid red;
   }
   .col {
     flex-basis: 40%;
