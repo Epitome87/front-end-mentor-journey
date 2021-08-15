@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-color-red: hsl(0, 100%, 74%);
+  --primary-color-green: hsl(154, 59%, 51%);
+  --accent-color-blue: hsl(248, 32%, 49%);
+  --neutral-color-darkblue: hsl(249, 10%, 26%);
+  --neutral-color-grayishblue: hsl(246, 25%, 77%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-image: url(images/bg-intro-desktop.png);
+  background-color: var(--primary-color-red);
+}
+
+.container {
+  width: 90%;
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+.hero {
+  color: #fff;
+  padding: 10px;
+  margin: 50px 0px 50px 0px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1rem;
+}
+
+.secondary {
+  padding: 10px;
+  margin: 25px;
+}
+
+.trial {
+  color: #fff;
+  background-color: var(--accent-color-blue);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.form {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.form > input {
+  display: block;
+  padding: 10px;
+  margin: 20px auto;
+  height: 40px;
+  width: 90%;
+  border-radius: 5px;
+}
+
+button {
+  font-family: Poppins, sans-serif;
+  font-size: 1.25rem;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: var(--primary-color-green);
+  display: block;
+  padding: 10px;
+  margin: 0px auto;
+  width: 90%;
+  border-radius: 5px;
+}
+
+.terms {
+  color: gray;
+  text-align: center;
+}
+
+.terms a {
+  color: var(--primary-color-red);
+}
+
+@media (min-width: 800px) {
+  .row {
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .col {
+    width: 100%;
+  }
+}
