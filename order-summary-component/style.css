@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  --primary-color-paleblue: hsl(225, 100%, 94%);
+  --primary-color-brightblue: hsl(245, 75%, 52%);
+
+  --neutral-verypaleblue: hsl(225, 100%, 98%);
+  --neutral-desaturatedblue: hsl(224, 23%, 55%);
+  --neutral-darkblue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: 'Red Hat Display';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('images/pattern-background-mobile.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.order-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 75px auto;
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.hero-content {
+  /* padding: 10px 20px 30px 20px; */
+  flex-basis: 100%;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+}
+
+.plan-container {
+  background-color: hsla(225, 100%, 94%, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.plan-container__col {
+  display: flex;
+  align-items: center;
+}
+
+.plan-container__music-icon {
+  background: url('images/icon-music.svg');
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+}
+
+.plan-info {
+  line-height: 0.5rem;
+}
+
+.plan-container__text {
+  font-weight: bold;
+}
+
+.plan-container a {
+  font-weight: bold;
+  color: var(--primary-color-brightblue);
+}
+
+button {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  height: 60px;
+  width: 100%;
+  border-radius: 10px;
+  margin: 25px 0 30px 0;
+  border: none;
+  cursor: pointer;
+}
+
+#button-proceed {
+  background-color: var(--primary-color-brightblue);
+  box-shadow: 0 15px 25px hsla(225, 100%, 94%, 1);
+}
+
+#button-proceed:hover {
+  background-color: hsla(245, 75%, 52%, 0.8);
+}
+
+#button-proceed:active {
+  transform: scale(0.97);
+  box-shadow: 0 10px 15px hsla(225, 100%, 94%, 1);
+}
+
+#button-cancel {
+  color: rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-image: url('images/pattern-background-desktop.svg');
+  }
+}
