@@ -1,0 +1,135 @@
+// Bright orange: hsl(31, 77%, 52%)
+// Dark cyan: hsl(184, 100%, 22%)
+// Very dark cyan: hsl(179, 100%, 13%)
+
+// ### Neutral
+
+// Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+// Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+$color-primary-orange-bright: hsl(31, 77%, 52%);
+$color-primary-cyan-dark: hsl(184, 100%, 22%);
+$color-primary-cyan-darker: hsl(179, 100%, 13%);
+
+$color-white-transparent: hsla(0, 0%, 100%, 0.75);
+$color-gray-light: hsl(0, 0%, 95%);
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: $color-gray-light;
+  color: $color-gray-light;
+}
+
+// Surrounds all elements within the body, to help maintain consisting sizing
+// .container {
+//   display: flex;
+//   flex-direction: column;
+//   width: 95%;
+//   justify-content: flex-end;
+
+//   // Center the content horizontally
+//   align-items: center;
+// }
+
+.container {
+  display: grid;
+  place-items: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; // Superfluous since this is default value, but keeping for reference
+  justify-content: center;
+  margin: 5rem auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  max-width: 90%;
+  width: 720px;
+}
+
+.card {
+  padding: 3rem;
+
+  &#sedans {
+    background-color: $color-primary-orange-bright;
+  }
+
+  &#suvs {
+    background-color: $color-primary-cyan-dark;
+  }
+
+  &#luxury {
+    background-color: $color-primary-cyan-darker;
+  }
+
+  &__heading {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  &__paragraph {
+    color: $color-white-transparent;
+    line-height: 1.5;
+  }
+
+  &__button {
+    background-color: $color-gray-light;
+    font-size: inherit;
+    font-family: inherit;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 5px 5px rgba(black, 0.3);
+    transition: transform 0.2s ease-in;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 3px 3px rgba(black, 0.2);
+    }
+
+    &:active {
+      transform: scale(0.95);
+      box-shadow: 0 8px 8px rgba(black, 0.6);
+    }
+
+    &:focus {
+      outline: none;
+      background-color: lighten($color-gray-light, 50%);
+      box-shadow: 0 5px 5px rgba(black, 0.7);
+    }
+
+    &--sedan {
+      color: $color-primary-orange-bright;
+    }
+
+    &--suv {
+      color: $color-primary-cyan-dark;
+    }
+
+    &--luxury {
+      color: $color-primary-cyan-darker;
+    }
+  }
+}
+
+@media (min-width: 850px) {
+  .card-container {
+    flex-direction: row;
+    width: 1100px; //1440px;
+  }
+
+  .card__button {
+    margin-top: 5rem;
+  }
+}
