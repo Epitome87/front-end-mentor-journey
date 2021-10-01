@@ -2,14 +2,14 @@
 
 Here you will find my attempts at completing the various challenges found on Frontend Mentor. I will begin with the easiest ones and (hopefully) advance to the more difficult ones!
 
-| Challenge # | Challenge Title                                                                                                                             | My Attempt                                                                                                         |
-| :---------: | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-|     01      | [Intro Component With Signup Form](https://github.com/Epitome87/front-end-mentor-journey/tree/main/intro-component-with-signup-form)        | [Demo](https://epitome87.github.io/front-end-mentor-journey/intro-component-with-signup-form/)                     |
-|     02      | [Order Summary Component](https://github.com/Epitome87/front-end-mentor-journey/tree/main/order-summary-component)                          | [Demo](https://epitome87.github.io/front-end-mentor-journey/order-summary-component/)                              |
-|     03      | [Stats Preview Card Component](https://github.com/Epitome87/front-end-mentor-journey/tree/main/stats-preview-card-component)                | [Demo](https://epitome87.github.io/front-end-mentor-journey/stats-preview-card-component/)                         |
-|     04      | [Huddle Landing Page](https://github.com/Epitome87/front-end-mentor-journey/tree/main/huddle-landing-page-with-single-introductory-section) | [Demo](https://epitome87.github.io/front-end-mentor-journey/huddle-landing-page-with-single-introductory-section/) |
-|     05      | [3-Column Preview Card Component ](https://github.com/Epitome87/front-end-mentor-journey/tree/main/3-column-preview-card-component)         | [Demo](https://epitome87.github.io/front-end-mentor-journey/3-column-preview-card-component)                       |
-|     06      | [Single Price Grid Component ](https://github.com/Epitome87/front-end-mentor-journey/tree/main/single-price-grid-component)                 | [Demo](https://epitome87.github.io/front-end-mentor-journey/single-price-grid-component/)                          |
+| Challenge # | Challenge Title                                                                                                                      | My Attempt                                                                                     |
+| :---------: | ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- |
+|     01      | [Intro Component With Signup Form](https://github.com/Epitome87/front-end-mentor-journey/tree/main/intro-component-with-signup-form) | [Demo](https://epitome87.github.io/front-end-mentor-journey/intro-component-with-signup-form/) |
+|     02      | [Order Summary Component](https://github.com/Epitome87/front-end-mentor-journey/tree/main/order-summary-component)                   | [Demo](https://epitome87.github.io/front-end-mentor-journey/order-summary-component/)          |
+|     03      | [Stats Preview Card Component](https://github.com/Epitome87/front-end-mentor-journey/tree/main/stats-preview-card-component)         | [Demo](https://epitome87.github.io/front-end-mentor-journey/stats-preview-card-component/)     |
+|     04      | [Huddle Landing Page](https://github.com/Epitome87/front-end-mentor-journey/tree/main/huddle-landing-page)                           | [Demo](https://epitome87.github.io/front-end-mentor-journey/huddle-landing-page/)              |
+|     05      | [3-Column Preview Card Component ](https://github.com/Epitome87/front-end-mentor-journey/tree/main/3-column-preview-card-component)  | [Demo](https://epitome87.github.io/front-end-mentor-journey/3-column-preview-card-component)   |
+|     06      | [Single Price Grid Component ](https://github.com/Epitome87/front-end-mentor-journey/tree/main/single-price-grid-component)          | [Demo](https://epitome87.github.io/front-end-mentor-journey/single-price-grid-component/)      |
 
 ## Intro Component With Signup Form
 
