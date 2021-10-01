@@ -2,10 +2,40 @@
 
 Here you will find my attempts at completing the various challenges found on Frontend Mentor. I will begin with the easiest ones and (hopefully) advance to the more difficult ones!
 
-| 01 | [3-Column Preview Card Component ](https://github.com/Epitome87/front-end-mentor-journey/tree/main/3-column-preview-card-component-main) | [Demo](https://epitome87.github.io/front-end-mentor-journey/3-column-preview-card-component-main/) |
+| Challenge # | Challenge Title                                                                                                                                    | My Attempt                                                                                                                |
+| :---------: | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+|     01      | [Intro Component With Signup Form](https://github.com/Epitome87/front-end-mentor-journey/tree/main/intro-component-with-signup-form)               | [Demo](https://epitome87.github.io/front-end-mentor-journey/intro-component-with-signup-form/)                            |
+|     02      | [Order Summary Component](https://github.com/Epitome87/front-end-mentor-journey/tree/main/order-summary-component)                                 | [Demo](https://epitome87.github.io/front-end-mentor-journey/order-summary-component/)                                     |
+|     03      | [Stats Preview Card Component](https://github.com/Epitome87/front-end-mentor-journey/tree/main/stats-preview-card-component)                       | [Demo](https://epitome87.github.io/front-end-mentor-journey/stats-preview-card-component/)                                |
+|     04      | [Huddle Landing Page](https://github.com/Epitome87/front-end-mentor-journey/tree/main/huddle-landing-page-with-single-introductory-section-master) | [Demo](https://epitome87.github.io/front-end-mentor-journey/huddle-landing-page-with-single-introductory-section-master/) |
+|     05      | [3-Column Preview Card Component ](https://github.com/Epitome87/front-end-mentor-journey/tree/main/3-column-preview-card-component-main)           | [Demo](https://epitome87.github.io/front-end-mentor-journey/3-column-preview-card-component-main/)                        |
 
-## S3-Column Preview Card Component
+## Intro Component With Signup Form
+
+[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/intro-component-with-signup-form/)
+
+##### `Originally Completed: 8/14/2021`
+
+## Order Summary Component
+
+[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/order-summary-component)
+
+##### `Originally Completed: 8/15/2021`
+
+## Stats Preview Card Component
+
+[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/stats-preview-card-component)
+
+##### `Originally Completed: 8/19/2021`
+
+## Huddle Landing Page
+
+[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/huddle-landing-page-with-single-introductory-section-master)
+
+##### `Originally Completed: 9/05/2021`
+
+## 3-Column Preview Card Component
 
 [View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/3-column-preview-card-component-main/)
 
-###### `Originally Completed: 9/30/2021`
+##### `Originally Completed: 9/30/2021`
