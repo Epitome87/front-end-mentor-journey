@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+$color-primary-cyan: hsl(185, 75%, 39%);
+$color-primary-blue: hsl(229, 23%, 23%);
+$color-primary-gray: hsl(227, 10%, 46%);
+$color-neutral-gray: hsl(0, 0%, 59%);
+$font-default: 18px;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: $font-default;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  background-color: $color-primary-cyan;
+}
+
+p {
+  color: $color-primary-gray;
+  margin-top: -1rem;
+}
+
+.image-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-75%, -60%);
+  z-index: -1;
+}
+
+.image-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(75%, 60%);
+  z-index: -1;
+}
+
+.profile-container {
+  width: 400px;
+  background-color: #fff;
+  margin-top: 100px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  &:hover .profile__image {
+    transform: scale(1.05);
+  }
+}
+
+.card-bg-img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+
+.profile__details {
+  .profile__image {
+    border-radius: 50%;
+    // Using outline with negative offset to fix an odd error where there's a gap between image and border for me
+    outline: 5px solid #fff;
+    outline-offset: -2px;
+    position: relative;
+    bottom: 15%;
+    transition: transform 0.1s ease-in;
+  }
+
+  .profile__name {
+    margin-top: -1.5rem;
+  }
+}
+
+.profile__age {
+  color: $color-primary-gray;
+  font-weight: lighter;
+}
+
+hr {
+  background-color: $color-primary-gray;
+  opacity: 0.5;
+}
+
+.profile__socials {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+// Not much is necessary for > 675px to be responsive: Just translate where the two background images go!
+@media screen and (min-width: 675px) {
+  .image-top {
+    transform: translate(-25%, -50%);
+  }
+
+  .image-bottom {
+    transform: translate(25%, 70%);
+  }
+}

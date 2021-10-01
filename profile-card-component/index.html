@@ -1,35 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Victor Crest
-  26
-  London
+    <title>Frontend Mentor | Profile card component</title>
 
-  80K
-  Followers
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="images/bg-pattern-top.svg" alt="image-top" class="image-top" />
+    <img
+      src="images/bg-pattern-bottom.svg"
+      alt="image-bottom"
+      class="image-bottom"
+    />
 
-  803K
-  Likes
+    <main>
+      <div class="profile-container">
+        <div class="profile__details">
+          <img
+            src="images/bg-pattern-card.svg"
+            alt="Bubbly abstract pattern"
+            class="card-bg-img"
+          />
+          <img
+            src="images/image-victor.jpg"
+            alt="Victor Crest's profile image"
+            class="profile__image"
+          />
+          <h2 class="profile__name">
+            Victor Crest <span class="age">26</span>
+          </h2>
+          <p class="profile__address">London</p>
+          <hr />
+        </div>
 
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <!-- Social Statistics -->
+        <div class="profile__socials">
+          <!-- Followers -->
+          <div class="profile__followers">
+            <h2 class="profile__followers-count">80k</h2>
+            <p class="profile__followers-type">Followers</p>
+          </div>
+          <!-- Likes -->
+          <div class="profile__likes">
+            <h2 class="profile__likes-count">803k</h2>
+            <p class="profile__likes-type">Likes</p>
+          </div>
+          <!-- Photos -->
+          <div class="profile__photos">
+            <h2 class="profile__photos-count">1.4k</h2>
+            <p class="profile__photos-type">Photos</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Matthew McGrath</a>.
+    </div>
+  </body>
 </html>

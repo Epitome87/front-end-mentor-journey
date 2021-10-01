@@ -10,6 +10,7 @@ Here you will find my attempts at completing the various challenges found on Fro
 |     04      | [Huddle Landing Page](https://github.com/Epitome87/front-end-mentor-journey/tree/main/huddle-landing-page)                           | [Demo](https://epitome87.github.io/front-end-mentor-journey/huddle-landing-page/)              |
 |     05      | [3-Column Preview Card Component ](https://github.com/Epitome87/front-end-mentor-journey/tree/main/3-column-preview-card-component)  | [Demo](https://epitome87.github.io/front-end-mentor-journey/3-column-preview-card-component)   |
 |     06      | [Single Price Grid Component ](https://github.com/Epitome87/front-end-mentor-journey/tree/main/single-price-grid-component)          | [Demo](https://epitome87.github.io/front-end-mentor-journey/single-price-grid-component/)      |
+|     07      | [Profile Card Component ](https://github.com/Epitome87/front-end-mentor-journey/tree/main/profile-card-component)                    | [Demo](https://epitome87.github.io/front-end-mentor-journey/profile-card-component/)           |
 
 ## Intro Component With Signup Form
 
@@ -46,3 +47,9 @@ Here you will find my attempts at completing the various challenges found on Fro
 [View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/single-price-grid-component/)
 
 ##### `Originally Completed: 9/30/2021`
+
+## Profile Card Component
+
+[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/profile-card-component/)
+
+##### `Originally Completed: 10/01/2021`
