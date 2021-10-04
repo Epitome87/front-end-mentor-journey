@@ -7,6 +7,115 @@
 
 body {
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3rem;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 92rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #fff;
+  border-radius: 23px;
+  -webkit-box-shadow: 0 20px 30px #4a4b5e;
+          box-shadow: 0 20px 30px #4a4b5e;
+  margin-top: 5rem;
+}
+
+button {
+  background-color: transparent;
+  border: transparent;
+  text-align: left;
   padding: 0;
+  color: darkblue;
+}
+
+button:hover {
+  color: #f47c57;
+}
+
+.faq-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.faq-container h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 4rem;
+  color: darkblue;
+}
+
+.faq-item {
+  margin-top: 2rem;
+  border-bottom: 1px solid #e8e8ea;
+  color: darkblue;
+  font-size: 1.4rem;
+}
+
+.faq-question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.faq-question.collapse::after {
+  content: url("images/icon-arrow-down.svg");
+  height: 13px;
+  width: 10px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.faq-question.show {
+  font-weight: 700;
+}
+
+.faq-question.show::after {
+  content: url("images/icon-arrow-down.svg");
+  height: 13px;
+  width: 10px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.faq-question-content {
+  width: 95%;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.3s ease-in-out;
+  color: blue;
 }
 /*# sourceMappingURL=style.css.map */
