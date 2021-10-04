@@ -28,11 +28,33 @@
   </head>
   <body>
     <div class="container">
+      <div class="media">
+        <div class="media-mobile">
+          <img
+            class="woman-mobile"
+            src="images/illustration-woman-online-mobile.svg"
+            alt="#"
+          />
+        </div>
+        <div class="media-desktop">
+          <div class="box">
+            <img src="images/illustration-box-desktop.svg" alt="#" />
+          </div>
+          <div class="woman-desktop">
+            <img
+              class="woman-desktop"
+              src="images/illustration-woman-online-desktop.svg"
+              alt="#"
+            />
+          </div>
+        </div>
+      </div>
+
       <div class="faq-container">
         <h1>FAQ</h1>
 
         <div class="faq-item">
-          <button class="faq-question collapse">
+          <button class="faq-accordion">
             How many team members can I invite?
           </button>
           <p class="faq-content">
@@ -42,7 +64,7 @@
         </div>
 
         <div class="faq-item">
-          <button class="faq-question collapse">
+          <button class="faq-accordion">
             What is the maximum file upload size?
           </button>
           <p class="faq-content">
@@ -52,9 +74,7 @@
         </div>
 
         <div class="faq-item">
-          <button class="faq-question collapse">
-            How do I reset my password?
-          </button>
+          <button class="faq-accordion">How do I reset my password?</button>
           <p class="faq-content">
             Click “Forgot password” from the login page or “Change password”
             from your profile page. A reset link will be emailed to you.
@@ -62,9 +82,7 @@
         </div>
 
         <div class="faq-item">
-          <button class="faq-question collapse">
-            Can I cancel my subscription?
-          </button>
+          <button class="faq-accordion">Can I cancel my subscription?</button>
           <p class="faq-content">
             Yes! Send us a message and we’ll process your request no questions
             asked.
@@ -72,7 +90,7 @@
         </div>
 
         <div class="faq-item">
-          <button class="faq-question collapse">
+          <button class="faq-accordion">
             Do you provide additional support?
           </button>
           <p class="faq-content">

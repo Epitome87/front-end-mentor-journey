@@ -1,21 +1,16 @@
-const faqQuestion = document.querySelectorAll('.faq-question');
+const faqElements = document.querySelectorAll('.faq-accordion');
 
-faqQuestion.forEach((item) => {
-  item.addEventListener('click', () => {
-    if (item.classList.contains('show')) {
-      item.nextElementSibling.style.maxHeight = `0px`;
-    } else {
-      faqQuestion.forEach((element) => {
-        element.nextElementSibling.style.maxHeight = `0px`;
-        element.classList.remove('show');
-      });
-    }
+faqElements.forEach((faq) => {
+  faq.addEventListener('click', (event) => {
+    //   Toggle between adding and removing the "active" class, to highlight the button that controls the panel
+    faq.classList.toggle('active');
 
-    const height = item.nextElementSibling.scrollHeight;
-    item.classList.toggle('show');
-
-    if (item.classList.contains('show')) {
-      item.nextElementSibling.style.maxHeight = `${height}px`;
+    // Toggle between hiding and showing the active panel
+    let panel = faq.nextElementSibling;
+    console.log(panel.style.maxHeight);
+    if (panel.style.maxHeight) panel.style.maxHeight = null;
+    else {
+      panel.style.maxHeight = panel.scrollHeight + 'px';
     }
   });
 });
