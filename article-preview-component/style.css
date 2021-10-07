@@ -1,13 +1,32 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+/*
+- Very Dark Grayish Blue: hsl(217, 19%, 35%)
+- Desaturated Dark Blue: hsl(214, 17%, 51%)
+- Grayish Blue: hsl(212, 23%, 69%)
+- Light Grayish Blue: hsl(210, 46%, 95%) */
+
+:root {
+  --color-blue-gray-dark: hsl(217, 19%, 35%);
+  --color-blue-dark: hsl(214, 17%, 51%);
+  --color-blue-gray: hsl(212, 23%, 69%);
+  --color-blue-gray-light: hsl(210, 46%, 95%);
+}
+
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  font-family: "Manrope", sanss-sans-serif;
   background-color: hsl(210, 46%, 95%);
   max-height: 100vh;
   overflow: hidden;
+
+  color: var(--color-blue-gray-dark);
 }
 
 img {
@@ -38,16 +57,24 @@ img {
 
 
 .content__title {
-
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-blue-gray-dark);
 }
 
 .content__body {
-
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-blue-gray);
 }
 
 .author {
   display: flex;
   flex-direction: row;
+
+
+  opacity: 0;
+  display: none;
 }
 
 .author__image {
@@ -63,6 +90,52 @@ img {
 
 .author__date {
 
+}
+
+.socials {
+  background-color: var(--color-blue-gray-dark);
+  padding: 1rem;
+  text-align: center;
+}
+
+.share {
+  display: inline-block;
+  color: var(--color-blue-gray-light);
+  text-transform: uppercase;
+  letter-spacing: 2.5;
+}
+
+.social-link img {
+  width: 1.5rem;
+  height: 1.5em;
+  border-radius: 50%;
+  background-color: #fff;
+}
+/* yle all Font Awesome Icons */
+.social-link,
+.fa {
+  padding: 20px;
+  font-size: 1.5rem;
+  /* width: 2rem;
+  height: 2rem; */
+
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--color-blue-gray-dark);
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  /* color: var(--color-blue-gray-dark);
+  background-color: #fff; */
 }
 
 @media screen and (max-width: 680px) {
