@@ -1,0 +1,124 @@
+$page-max-width: 1200px;
+
+$color-gradient: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+$color-gray-blue-very-light: hsl(240, 78%, 98%);
+$color-gray-blue-light: hsl(234, 14%, 74%);
+$color-gray-blue: hsl(233, 13%, 49%);
+$color-gray-blue-dark: hsl(232, 13%, 33%);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: white;
+  line-height: 1.4;
+  background-color: $color-gray-blue-very-light;
+}
+
+//  Keep image within its container
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  max-width: $page-max-width;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.plan {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+#plan--basic,
+#plan--master {
+  color: #000;
+  background-color: white;
+}
+
+#plan--pro {
+  color: #fff;
+  background: $color-gradient;
+}
