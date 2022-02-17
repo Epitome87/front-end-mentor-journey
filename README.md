@@ -11,8 +11,8 @@ Here you will find my attempts at completing the various challenges found on Fro
 |     05      | [3-Column Preview Card Component ](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie%20Level/3-column-preview-card-component)   | [Demo](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/3-column-preview-card-component)      |
 |     06      | [Single Price Grid Component ](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie%20Level/single-price-grid-component)           | [Demo](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/single-price-grid-component/)         |
 |     07      | [Profile Card Component ](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie%20Level/profile-card-component)                     | [Demo](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/profile-card-component/)              |
-|     08      | [Pricing Component With Toggle](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Junior%20Level/testimonials-grid-section-main)       | [Demo](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/testimonials-grid-section-main)       |
-|     09      | [Pricing Component With Toggle](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Junior%20Level/fylo-dark-theme-landing-page-master)  | [Demo](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/fylo-dark-theme-landing-page-master)  |
+|     08      | [Testimonials Grid Section](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Junior%20Level/testimonials-grid-section-main)           | [Demo](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/testimonials-grid-section-main)       |
+|     09      | [Fylo Dark Theme Landing Page](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Junior%20Level/fylo-dark-theme-landing-page-master)   | [Demo](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/fylo-dark-theme-landing-page-master)  |
 |     10      | [Pricing Component With Toggle](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Junior%20Level/pricing-component-with-toggle-master) | [Demo](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/pricing-component-with-toggle-master) |
 
 ## Intro Component With Signup Form
@@ -57,7 +57,7 @@ Here you will find my attempts at completing the various challenges found on Fro
 
 ##### `Originally Completed: 10/01/2021`
 
-## Pricing Component with Toggle
+## Testimonials Grid Section
 
 [View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/testimonials-grid-section-main/)
 
