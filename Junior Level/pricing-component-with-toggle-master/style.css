@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 *,
 *::before,
 *::after {
@@ -8,7 +9,7 @@
 }
 
 body {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: white;
   line-height: 1.4;
   background-color: #f6f6fe;
@@ -38,6 +39,63 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 1200px) {
+  .flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+#pricing-toggle {
+  color: #494c5f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 3rem;
+}
+
+#pricing-toggle h1 {
+  font-size: 2rem;
+}
+
+#pricing-toggle .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
 }
 
 .switch {
@@ -67,7 +125,7 @@ a {
 
 .slider:before {
   position: absolute;
-  content: "";
+  content: '';
   height: 26px;
   width: 26px;
   left: 4px;
@@ -77,8 +135,9 @@ a {
   transition: 0.4s;
 }
 
-input:checked + .slider {
-  background-color: #2196f3;
+input + .slider {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(#a3a8f0, #696fdd);
 }
 
 input:focus + .slider {
@@ -101,20 +160,102 @@ input:checked + .slider:before {
 }
 
 .plan {
-  width: 90%;
-  max-width: 500px;
+  width: 400px;
+  -ms-flex-preferred-size: 500px;
+      flex-basis: 500px;
   border-radius: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.plan h2 {
+  margin: 2.5rem 0 0 0;
+}
+
+.plan .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 4.5rem;
+  padding: 1rem 0 2rem 0;
+}
+
+.plan .price .dollar-span {
+  font-size: 2.5rem;
+  padding: 0 0.3rem;
+}
+
+.plan .storage {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #b3b5c6;
+  border-top: 1px solid #b3b5c6;
+}
+
+.plan .users {
+  padding: 1.5rem 0;
+}
+
+.plan .send {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #b3b5c6;
+  border-top: 1px solid #b3b5c6;
+}
+
+.plan a {
+  display: inline-block;
+  font: inherit;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 2.5rem 0 0.5rem 0;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.plan a:hover {
+  background: transparent !important;
 }
 
 #plan--basic,
 #plan--master {
   color: #000;
   background-color: white;
+  padding: 1rem 2rem;
+}
+
+#plan--basic a,
+#plan--master a {
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(#a3a8f0, #696fdd);
+}
+
+#plan--basic a:hover,
+#plan--master a:hover {
+  color: #696fdd;
+  outline: 2px solid #696fdd;
 }
 
 #plan--pro {
-  color: #fff;
+  color: white;
   background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
   background: linear-gradient(#a3a8f0, #696fdd);
+  border-color: white;
+  padding: 2rem 2rem;
+}
+
+#plan--pro a {
+  color: #696fdd;
+  background-color: white;
+}
+
+#plan--pro a:hover {
+  color: white;
+  outline: 2px solid white;
 }
 /*# sourceMappingURL=style.css.map */
