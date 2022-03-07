@@ -37,7 +37,8 @@ body {
 
 .container {
   max-width: 80rem;
-  margin: auto;
+  /* margin: auto; */
+  margin: 1rem 2rem;
 }
 
 .card {
@@ -68,7 +69,7 @@ body {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: all 0.25s ease;
+  transition: all 0.4s ease-in-out;
 }
 
 .card__image:hover::after {
