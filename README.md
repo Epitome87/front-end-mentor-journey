@@ -22,11 +22,15 @@ Here you will find my attempts at completing the various challenges found on Fro
 
 ##### `Originally Completed: 8/14/2021`
 
+<img src="Preview Images/preview-intro-component-with-signup.png" width="800px">
+
 ## Order Summary Component
 
 [View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/order-summary-component)
 
 ##### `Originally Completed: 8/15/2021`
+
+<img src="Preview Images/preview-order-summary-component.png" width="800px">
 
 ## Stats Preview Card Component
 
@@ -34,11 +38,15 @@ Here you will find my attempts at completing the various challenges found on Fro
 
 ##### `Originally Completed: 8/19/2021`
 
+<img src="Preview Images/preview-stats-preview-card-component.png" width="800px">
+
 ## Huddle Landing Page
 
 [View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/huddle-landing-page-with-single-introductory-section-master)
 
 ##### `Originally Completed: 9/05/2021`
+
+<img src="Preview Images/preview-huddle-landing-page.png" width="800px">
 
 ## 3-Column Preview Card Component
 
@@ -46,11 +54,15 @@ Here you will find my attempts at completing the various challenges found on Fro
 
 ##### `Originally Completed: 9/30/2021`
 
+<img src="Preview Images/preview-3-column-preview-card-component.png" width="800px">
+
 ## Single Price Grid Component
 
 [View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/single-price-grid-component/)
 
 ##### `Originally Completed: 9/30/2021`
+
+<img src="Preview Images/preview-single-price-grid-component.png" width="800px">
 
 ## Profile Card Component
 
@@ -58,11 +70,15 @@ Here you will find my attempts at completing the various challenges found on Fro
 
 ##### `Originally Completed: 10/01/2021`
 
+<img src="Preview Images/preview-profile-card-component.png" width="800px">
+
 ## Testimonials Grid Section
 
 [View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/testimonials-grid-section-main/)
 
 ##### `Originally Completed: 02/14/2022`
+
+<img src="Preview Images/preview-testimonials-grid-section.png" width="800px">
 
 ## Fylo Dark Theme Landing Page
 
@@ -70,14 +86,20 @@ Here you will find my attempts at completing the various challenges found on Fro
 
 ##### `Originally Completed: 2/15/2022`
 
+<img src="Preview Images/preview-fylo-dark-theme-landing-page.png" width="800px">
+
 ## Pricing Component with Toggle
 
 [View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/pricing-component-with-toggle-master/)
 
 ##### `Originally Completed: 02/17/2022`
 
+<img src="Preview Images/preview-pricing-component-with-toggle.png" width="800px">
+
 ## Sunnyside Agency Landing Page
 
 [View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/sunnyside-agency-landing-page-main)
 
 ##### `Originally Completed: 03/07/2022`
+
+<img src="Preview Images/preview-sunnyside-agency-landing-page.png" width="800px">
