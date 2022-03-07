@@ -14,6 +14,7 @@ Here you will find my attempts at completing the various challenges found on Fro
 |     08      | [Testimonials Grid Section](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Junior%20Level/testimonials-grid-section-main)           | [Demo](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/testimonials-grid-section-main)       |
 |     09      | [Fylo Dark Theme Landing Page](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Junior%20Level/fylo-dark-theme-landing-page-master)   | [Demo](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/fylo-dark-theme-landing-page-master)  |
 |     10      | [Pricing Component With Toggle](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Junior%20Level/pricing-component-with-toggle-master) | [Demo](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/pricing-component-with-toggle-master) |
+|     11      | [Sunnyside Agency Landing Page](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Junior%20Level/sunnyside-agency-landing-page-main)   | [Demo](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/sunnyside-agency-landing-page-main)   |
 
 ## Intro Component With Signup Form
 
@@ -74,3 +75,9 @@ Here you will find my attempts at completing the various challenges found on Fro
 [View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/pricing-component-with-toggle-master/)
 
 ##### `Originally Completed: 02/17/2022`
+
+## Sunnyside Agency Landing Page
+
+[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/sunnyside-agency-landing-page-main)
+
+##### `Originally Completed: 03/07/2022`
