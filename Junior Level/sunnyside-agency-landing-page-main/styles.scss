@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,wght@0,900;1,700&display=swap');
+
+$page-min-width: 375px;
+$page-max-width: 1440px;
+
+// Font
+$font-size: 0.888rem;
+$font-family-main: 'Barlow';
+$font-family-secondary: 'Fraunces';
+$font-weight-main: 600;
+$font-weight-secondary-md: 700;
+$font-weight-secondary-bold: 900;
+
+$color-red: hsl(7, 99%, 70%);
+$color-yellow: hsl(51, 100%, 49%);
+$color-cyan-desaturated: hsl(167, 40%, 24%);
+$color-blue: hsl(198, 62%, 26%);
+$color-cyan: hsl(168, 34%, 41%);
+
+$color-blue-very-dark: hsl(212, 27%, 19%);
+$color-blue-very-dark: hsl(213, 9%, 39%);
+$color-blue-dark-gray: hsl(232, 10%, 55%);
+$color-blue-gray: hsl(210, 4%, 67%);
+$color-white: hsl(0, 0%, 100%);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family-main, sans-serif;
+  line-height: 1.8;
+  background-color: $color-blue-dark-gray;
+  // On Mobile, ALL text seems to be centered
+  text-align: center;
+}
+
+//  Keep image within its container
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-family-secondary;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: $page-max-width;
+  margin: 0 auto;
+  padding: 2rem;
+  //   overflow: auto;
+}
+
+// Hero Section
+#hero {
+  height: 50vh;
+  color: white;
+  text-align: center;
+  background-image: url('images/mobile/image-header.jpg');
+  background-size: cover;
+
+  h1 {
+    font-size: 3rem;
+    letter-spacing: 5px;
+    padding-top: 5rem;
+    text-transform: uppercase;
+  }
+}
+
+// Benefits Section
+#benefits {
+  background-color: blue;
+  h2 {
+    font-size: 2rem;
+    padding: 3rem 0 2rem 0;
+  }
+
+  .benefits__grid-container {
+    display: grid;
+    grid-auto-rows: 1fr;
+
+    img {
+      width: 100%;
+      // Giving img a set height fixes the alignment issues when other articles have padding / margin
+      height: 100%;
+    }
+
+    article {
+      background-color: white;
+      // Vertical adding messes the size of the image grid items up -- why?
+      // padding: 2rem 1rem;
+      padding: 0 1rem;
+    }
+
+    #benefit__graphic {
+      color: $color-cyan-desaturated;
+      background-image: url('images/mobile/image-graphic-design.jpg');
+      background-size: cover;
+    }
+
+    #benefit__photography {
+      color: $color-blue-dark-gray;
+      background-image: url('images/mobile/image-photography.jpg');
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .benefits__grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+// Testimonials Section
+#testimonials {
+  background-color: $color-white;
+  padding: 3rem 2rem;
+
+  h3 {
+    color: $color-blue-gray;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+  }
+
+  .testimonials__grid-container {
+    display: grid;
+  }
+
+  .testimonial {
+    img {
+      width: 75px;
+      border-radius: 50%;
+      margin-bottom: 2rem;
+    }
+
+    .testimonial__body {
+      margin-bottom: 2rem;
+    }
+
+    .testimonial__footer {
+      .author {
+        font-family: $font-family-secondary;
+        font-weight: 900;
+      }
+
+      .role {
+        color: $color-blue-gray;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .testimonial:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    .testimonials__grid-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+// Gallery Section
+#gallery {
+  .gallery__grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: 768px) {
+    .gallery__grid-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+footer {
+  background-color: $color-cyan;
+  padding: 3rem 1rem;
+
+  .footer__logo {
+    // TODO: How to color this svg?
+    // color: $color-cyan-desaturated;
+
+    margin-bottom: 2rem;
+  }
+
+  .footer__links {
+    margin-bottom: 4rem;
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+    }
+  }
+
+  .footer__socials ul {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+}
