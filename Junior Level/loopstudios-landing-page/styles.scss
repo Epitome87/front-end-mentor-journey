@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+$page-max-width: 1200px;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Alata", sans-serif;
+  color: black;
+  line-height: 1.4;
+  background-color: white;
+}
+
+//  Keep image within its container
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  max-width: $page-max-width;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+.hero-bg {
+  height: 90vh;
+  background-image: url("images/mobile/image-hero.jpg");
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: 650px) {
+    background-image: url("images/desktop/image-hero.jpg");
+  }
+}
+
+.hero-bg {
+  color: white;
+}
+
+header {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  ul {
+    display: flex;
+    gap: 4rem;
+  }
+
+  li {
+  }
+}
+
+h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  border: 2px solid white;
+}
+
+#creations {
+  h3 {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .creation__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    padding: 2rem;
+    height: 200px;
+    color: white;
+    font-size: 2rem;
+
+    p {
+      max-width: 150px;
+    }
+
+    &:nth-of-type(1) {
+      background-image: url("images/mobile/image-deep-earth.jpg");
+    }
+
+    &:nth-of-type(2) {
+      background-image: url("images/mobile/image-night-arcade.jpg");
+    }
+
+    &:nth-of-type(3) {
+      background-image: url("images/mobile/image-soccer-team.jpg");
+    }
+
+    &:nth-of-type(4) {
+      background-image: url("images/mobile/image-grid.jpg");
+    }
+
+    &:nth-of-type(5) {
+      background-image: url("images/mobile/image-from-above.jpg");
+    }
+
+    &:nth-of-type(6) {
+      background-image: url("images/mobile/image-pocket-borealis.jpg");
+    }
+
+    &:nth-of-type(7) {
+      background-image: url("images/mobile/image-curiosity.jpg");
+    }
+
+    &:nth-of-type(8) {
+      background-image: url("images/mobile/image-fisheye.jpg");
+    }
+  }
+
+  @media (min-width: 650px) {
+    .card-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 900px) {
+    .card-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 3rem 1rem;
+  border: 2px solid red;
+
+  .footer__first {
+  }
+
+  .footer__second {
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem;
+  }
+
+  .copyright {
+    opacity: 0.5;
+  }
+
+  @media (min-width: 650px) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    ul {
+      flex-direction: row;
+    }
+  }
+}
