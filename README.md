@@ -15,6 +15,7 @@ Here you will find my attempts at completing the various challenges found on Fro
 |     09      | [Fylo Dark Theme Landing Page](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Junior%20Level/fylo-dark-theme-landing-page-master)   | [Demo](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/fylo-dark-theme-landing-page-master)  |
 |     10      | [Pricing Component With Toggle](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Junior%20Level/pricing-component-with-toggle-master) | [Demo](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/pricing-component-with-toggle-master) |
 |     11      | [Sunnyside Agency Landing Page](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Junior%20Level/sunnyside-agency-landing-page-main)   | [Demo](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/sunnyside-agency-landing-page-main)   |
+|     12      | [Social Proof Section](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie%20Level/social-proof-section)                          | [Demo](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/social-proof-section)                 |
 
 ## Intro Component With Signup Form
 
@@ -103,3 +104,11 @@ Here you will find my attempts at completing the various challenges found on Fro
 ##### `Originally Completed: 03/07/2022`
 
 <img src="Preview Images/preview-sunnyside-agency-landing-page.png" width="800px">
+
+## Social Proof Section
+
+[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/social-proof-section)
+
+##### `Originally Completed: 03/14/2022`
+
+(Image to come later)
