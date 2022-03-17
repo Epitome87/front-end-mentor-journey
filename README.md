@@ -2,20 +2,20 @@
 
 Here you will find my attempts at completing the various challenges found on Frontend Mentor. I will begin with the easiest ones and (hopefully) advance to the more difficult ones!
 
-| Challenge # | Challenge Title                                                                                                                                      | My Attempt                                                                                                       |
-| :---------: | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-|     01      | [Intro Component With Signup Form](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie%20Level/intro-component-with-signup-form)  | [Demo](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/intro-component-with-signup-form/)    |
-|     02      | [Order Summary Component](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie%20Level/order-summary-component)                    | [Demo](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/order-summary-component/)             |
-|     03      | [Stats Preview Card Component](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie%20Level/stats-preview-card-component)          | [Demo](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/stats-preview-card-component/)        |
-|     04      | [Huddle Landing Page](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie%20Level/huddle-landing-page)                            | [Demo](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/huddle-landing-page/)                 |
-|     05      | [3-Column Preview Card Component ](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie%20Level/3-column-preview-card-component)   | [Demo](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/3-column-preview-card-component)      |
-|     06      | [Single Price Grid Component ](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie%20Level/single-price-grid-component)           | [Demo](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/single-price-grid-component/)         |
-|     07      | [Profile Card Component ](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie%20Level/profile-card-component)                     | [Demo](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/profile-card-component/)              |
-|     08      | [Testimonials Grid Section](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Junior%20Level/testimonials-grid-section-main)           | [Demo](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/testimonials-grid-section-main)       |
-|     09      | [Fylo Dark Theme Landing Page](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Junior%20Level/fylo-dark-theme-landing-page-master)   | [Demo](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/fylo-dark-theme-landing-page-master)  |
-|     10      | [Pricing Component With Toggle](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Junior%20Level/pricing-component-with-toggle-master) | [Demo](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/pricing-component-with-toggle-master) |
-|     11      | [Sunnyside Agency Landing Page](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Junior%20Level/sunnyside-agency-landing-page-main)   | [Demo](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/sunnyside-agency-landing-page-main)   |
-|     12      | [Social Proof Section](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie%20Level/social-proof-section)                          | [Demo](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/social-proof-section)                 |
+| Challenge # | Challenge Title                                                                                                                                     | My Attempt                                                                                                    |
+| :---------: | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+|     01      | [Intro Component With Signup Form](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie%20Level/intro-component-with-signup-form) | [Demo](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/intro-component-with-signup-form/) |
+|     02      | [Order Summary Component](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie%20Level/order-summary-component)                   | [Demo](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/order-summary-component/)          |
+|     03      | [Stats Preview Card Component](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie%20Level/stats-preview-card-component)         | [Demo](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/stats-preview-card-component/)     |
+|     04      | [Huddle Landing Page](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie%20Level/huddle-landing-page)                           | [Demo](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/huddle-landing-page/)              |
+|     05      | [3-Column Preview Card Component ](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie%20Level/3-column-preview-card-component)  | [Demo](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/3-column-preview-card-component)   |
+|     06      | [Single Price Grid Component ](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie%20Level/single-price-grid-component)          | [Demo](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/single-price-grid-component/)      |
+|     07      | [Profile Card Component ](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie%20Level/profile-card-component)                    | [Demo](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/profile-card-component/)           |
+|     08      | [Testimonials Grid Section](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Junior%20Level/testimonials-grid-section)               | [Demo](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/testimonials-grid-section)         |
+|     09      | [Fylo Dark Theme Landing Page](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Junior%20Level/fylo-dark-theme-landing-page)         | [Demo](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/fylo-dark-theme-landing-page)      |
+|     10      | [Pricing Component With Toggle](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Junior%20Level/pricing-component-with-toggle)       | [Demo](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/pricing-component-with-toggle)     |
+|     11      | [Sunnyside Agency Landing Page](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Junior%20Level/sunnyside-agency-landing-page)       | [Demo](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/sunnyside-agency-landing-page)     |
+|     12      | [Social Proof Section](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie%20Level/social-proof-section)                         | [Demo](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/social-proof-section)              |
 
 ## Intro Component With Signup Form
 
@@ -43,7 +43,7 @@ Here you will find my attempts at completing the various challenges found on Fro
 
 ## Huddle Landing Page
 
-[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/huddle-landing-page-with-single-introductory-section-master)
+[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/huddle-landing-page-with-single-introductory-section)
 
 ##### `Originally Completed: 9/05/2021`
 
@@ -51,7 +51,7 @@ Here you will find my attempts at completing the various challenges found on Fro
 
 ## 3-Column Preview Card Component
 
-[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/3-column-preview-card-component-main/)
+[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Noobie%20Level/3-column-preview-card-component/)
 
 ##### `Originally Completed: 9/30/2021`
 
@@ -75,7 +75,7 @@ Here you will find my attempts at completing the various challenges found on Fro
 
 ## Testimonials Grid Section
 
-[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/testimonials-grid-section-main/)
+[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/testimonials-grid-section/)
 
 ##### `Originally Completed: 02/14/2022`
 
@@ -83,7 +83,7 @@ Here you will find my attempts at completing the various challenges found on Fro
 
 ## Fylo Dark Theme Landing Page
 
-[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/fylo-dark-theme-landing-page-master/)
+[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/fylo-dark-theme-landing-page/)
 
 ##### `Originally Completed: 2/15/2022`
 
@@ -91,7 +91,7 @@ Here you will find my attempts at completing the various challenges found on Fro
 
 ## Pricing Component with Toggle
 
-[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/pricing-component-with-toggle-master/)
+[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/pricing-component-with-toggle/)
 
 ##### `Originally Completed: 02/17/2022`
 
@@ -99,7 +99,7 @@ Here you will find my attempts at completing the various challenges found on Fro
 
 ## Sunnyside Agency Landing Page
 
-[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/sunnyside-agency-landing-page-main)
+[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Junior%20Level/sunnyside-agency-landing-page)
 
 ##### `Originally Completed: 03/07/2022`
 
