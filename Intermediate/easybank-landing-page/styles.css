@@ -9,9 +9,10 @@
 }
 
 body {
-  font-family: "Public Sans", sans-serif;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 1.125rem;
   color: #9698a6;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 img {
@@ -31,21 +32,102 @@ a {
 .container {
   max-width: 1260px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 2rem;
+}
+
+#benefits {
+  background-color: #f3f4f6;
+  text-align: center;
+}
+
+#benefits .benefits-heading {
+  padding: 1rem 0 3.25rem 0;
+}
+
+#benefits .benefits-heading h2 {
+  color: #2d314d;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+#benefits .benefits-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+#benefits .benefit h3 {
+  color: #2d314d;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+#articles {
+  background-color: #fafafa;
+  padding: 5rem 0;
+}
+
+#articles h4 {
+  color: #2d314d;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#articles .article-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+#articles article {
+  background-color: white;
+  padding-bottom: 2rem;
+}
+
+#articles .article__author {
+  font-size: 0.75rem;
+  margin: 0.75rem 0;
+  padding: 0 2rem;
+}
+
+#articles .article__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2d314d;
+  padding: 0 2rem;
+}
+
+#articles .article__body {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  padding: 0 2rem;
 }
 
 footer {
   background-color: #2d314d;
   color: white;
-}
-
-footer .social-icons {
-  border: 2px solid red;
+  text-align: center;
 }
 
 footer .social-icons img {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
+  margin: 0 0.25rem;
 }
 
 footer a {

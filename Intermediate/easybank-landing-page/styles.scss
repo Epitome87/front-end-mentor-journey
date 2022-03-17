@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
 
 $page-breakpoint-mobile: 760px;
 $page-breakpoint-tablet: 900px;
@@ -24,9 +24,10 @@ $font-size: 1.125rem;
 }
 
 body {
-  font-family: "Public Sans", sans-serif;
+  font-family: 'Public Sans', sans-serif;
+  font-size: $font-size;
   color: $color-gray-blue;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 //  Keep image within its container
@@ -47,20 +48,101 @@ a {
 .container {
   max-width: $page-max-width;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 2rem;
   //   overflow: auto;
+}
+
+#benefits {
+  background-color: $color-gray-blue-light;
+  text-align: center;
+
+  .benefits-heading {
+    padding: 1rem 0 3.25rem 0;
+
+    h2 {
+      color: $color-blue-dark;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    p {
+    }
+  }
+
+  .benefits-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .benefit {
+    img {
+    }
+
+    h3 {
+      color: $color-blue-dark;
+      font-weight: 400;
+      margin: 1rem 0;
+    }
+  }
+}
+
+#articles {
+  background-color: $color-gray-light;
+  padding: 5rem 0;
+
+  h4 {
+    color: $color-blue-dark;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .article-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  article {
+    background-color: $color-white;
+    padding-bottom: 2rem;
+  }
+
+  .article__author {
+    font-size: 0.75rem;
+    margin: 0.75rem 0;
+    padding: 0 2rem;
+  }
+
+  .article__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: $color-blue-dark;
+    padding: 0 2rem;
+  }
+
+  .article__body {
+    margin-top: 0.75rem;
+    font-size: 1rem;
+    padding: 0 2rem;
+  }
 }
 
 footer {
   background-color: $color-blue-dark;
   color: white;
+  text-align: center;
 
   .social-icons {
-    border: 2px solid red;
-
     img {
-      width: 50px;
-      height: 50px;
+      width: 30px;
+      height: 30px;
+      margin: 0 0.25rem;
     }
   }
 

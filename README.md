@@ -16,6 +16,8 @@ Here you will find my attempts at completing the various challenges found on Fro
 |     10      | [Pricing Component With Toggle](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Junior/pricing-component-with-toggle)       | [Demo](https://epitome87.github.io/front-end-mentor-journey/Junior/pricing-component-with-toggle)     |
 |     11      | [Sunnyside Agency Landing Page](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Junior/sunnyside-agency-landing-page)       | [Demo](https://epitome87.github.io/front-end-mentor-journey/Junior/sunnyside-agency-landing-page)     |
 |     12      | [Social Proof Section](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie/social-proof-section)                         | [Demo](https://epitome87.github.io/front-end-mentor-journey/Noobie/social-proof-section)              |
+|     13      | [Loopstudios Landing Page](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Junior/loopstudios-landing-page)                 | [Demo](https://epitome87.github.io/front-end-mentor-journey/Junior/loopstudios-landing-page)          |
+|     14      | [Easybank Landing Page](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Intermediate/easybank-landing-page)                 | [Demo](https://epitome87.github.io/front-end-mentor-journey/Intermediate/easybank-landing-page)       |
 
 ## Intro Component With Signup Form
 
@@ -110,5 +112,25 @@ Here you will find my attempts at completing the various challenges found on Fro
 [View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Noobie/social-proof-section)
 
 ##### `Originally Completed: 03/14/2022`
+
+<img src="Preview Images/preview-social-proof-section.png" width="800px">
+
+## Loopstudios Landing Page
+
+[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Junior/loopstudios-landing-page)
+
+##### `Originally Completed: 03/17/2022`
+
+Still needs a little polishing on desktop view.
+
+(Image to come later)
+
+## Easybank Landing Page
+
+[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Junior/loopstudios-landing-page)
+
+##### `Originally Completed: In Progress`
+
+Work in progress!
 
 (Image to come later)
