@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata:wght@400&family=Josefin+Sans:wght@300&display=swap");
 *,
 *::before,
 *::after {
@@ -9,10 +9,12 @@
 }
 
 body {
-  font-family: "Alata", sans-serif;
-  color: black;
+  font-family: 'Alata', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
   line-height: 1.4;
   background-color: white;
+  color: #8c8c8c;
 }
 
 img {
@@ -30,7 +32,7 @@ a {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1150px;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -63,10 +65,12 @@ a {
 }
 
 .hero-bg {
-  height: 90vh;
+  position: relative;
+  height: 72.8vh;
   background-image: url("images/mobile/image-hero.jpg");
   background-position: center;
   background-size: cover;
+  padding: 2.25rem 1.75rem;
 }
 
 @media (min-width: 650px) {
@@ -75,8 +79,28 @@ a {
   }
 }
 
-.hero-bg {
+.hero-bg h1 {
+  font-family: 'Josefin Sans';
+  font-weight: 300;
+  font-size: 2.9rem;
+  border: 3px solid white;
+  line-height: 1;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  max-width: 600px;
+  margin: 0 1.75rem;
+  padding: 1.25rem 1.5rem;
   color: white;
+}
+
+@media (min-width: 900px) {
+  .hero-bg h1 {
+    font-size: 5rem;
+  }
 }
 
 header nav {
@@ -95,16 +119,63 @@ header ul {
   gap: 4rem;
 }
 
-h1 {
-  font-size: 5rem;
+#leader {
+  text-align: center;
+  padding: 5rem 0 2.5rem 0;
+}
+
+#leader h2 {
+  font-family: 'Josefin Sans';
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1;
   text-transform: uppercase;
-  border: 2px solid white;
+  color: black;
+  margin: 3rem 0 1.5rem 0;
+}
+
+#leader p {
+  font-size: 1.25rem;
+}
+
+#creations {
+  font-family: 'Josefin Sans';
+  font-weight: 300;
 }
 
 #creations h3 {
-  font-size: 3rem;
-  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1;
   text-transform: uppercase;
+  text-align: center;
+  color: black;
+  margin-bottom: 3rem;
+}
+
+#creations .see-all-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2.25rem 0 5rem 0;
+}
+
+#creations a {
+  font-family: 'Alata';
+  font-weight: 400;
+  font-size: 1.25rem;
+  letter-spacing: 3px;
+  border: 2px solid black;
+  padding: 0.5rem 3rem;
+  text-transform: uppercase;
+}
+
+#creations a:hover {
+  background-color: black;
+  color: #fff;
 }
 
 #creations .card-container {
@@ -112,7 +183,17 @@ h1 {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  gap: 2rem;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  gap: 1.7rem;
+  border: 2px solid red;
+}
+
+@media (min-width: 900px) {
+  #creations .card-container {
+    height: 95vh;
+  }
 }
 
 #creations .creation__card {
@@ -130,7 +211,16 @@ h1 {
   padding: 2rem;
   height: 200px;
   color: white;
-  font-size: 2rem;
+  font-size: 1.75rem;
+  line-height: 1;
+  background-size: cover;
+  background-position: left bottom;
+}
+
+@media (min-width: 900px) {
+  #creations .creation__card {
+    height: 40vh;
+  }
 }
 
 #creations .creation__card p {
@@ -197,8 +287,7 @@ footer {
   color: white;
   background-color: black;
   text-align: center;
-  padding: 3rem 1rem;
-  border: 2px solid red;
+  padding: 3.5rem 1rem;
 }
 
 footer ul {
@@ -209,8 +298,8 @@ footer ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1.5rem;
-  margin: 2rem 0;
+  gap: 1.7rem;
+  margin: 2.5rem 0 1.4rem 0;
 }
 
 footer .social-links {
@@ -220,8 +309,13 @@ footer .social-links {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 2rem;
+  gap: 1.2rem;
   margin: 2rem;
+}
+
+footer .social-links img {
+  width: 28px;
+  height: 28px;
 }
 
 footer .copyright {

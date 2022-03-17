@@ -1,6 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
-$page-max-width: 1200px;
+@import url('https://fonts.googleapis.com/css2?family=Alata:wght@400&family=Josefin+Sans:wght@300&display=swap');
 
+$page-max-width: 1150px;
+$color-white: hsl(0, 0%, 100%);
+$color-black: hsl(0, 0%, 0%);
+$color-gray-dark: hsl(0, 0%, 55%);
+$color-gray-very-dark: hsl(0, 0%, 41%);
+$font-size: 0.9375rem;
+
+// Zoom at 52% on mobile
+// 4.5vh = 1mm
+// Alata used in: "navbar links in desktop, Founded in" p in VR, See All btn, footer for links , footer for loopstudios / all rights reserved
+// Josefin used in mobile navbar links
 *,
 *::before,
 *::after {
@@ -10,10 +20,12 @@ $page-max-width: 1200px;
 }
 
 body {
-  font-family: "Alata", sans-serif;
-  color: black;
+  font-family: 'Alata', sans-serif;
+  font-size: $font-size;
+  font-weight: 400;
   line-height: 1.4;
-  background-color: white;
+  background-color: $color-white;
+  color: $color-gray-dark;
 }
 
 //  Keep image within its container
@@ -51,18 +63,38 @@ a {
 }
 
 .hero-bg {
-  height: 90vh;
-  background-image: url("images/mobile/image-hero.jpg");
+  position: relative;
+  height: 72.8vh;
+  background-image: url('images/mobile/image-hero.jpg');
   background-position: center;
   background-size: cover;
+  padding: 2.25rem 1.75rem;
 
   @media (min-width: 650px) {
-    background-image: url("images/desktop/image-hero.jpg");
+    background-image: url('images/desktop/image-hero.jpg');
   }
-}
 
-.hero-bg {
-  color: white;
+  h1 {
+    font-family: 'Josefin Sans';
+    font-weight: 300;
+    font-size: 2.9rem;
+    border: 3px solid $color-white;
+    line-height: 1;
+    text-transform: uppercase;
+    // position: relative;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    max-width: 600px;
+    margin: 0 1.75rem;
+    padding: 1.25rem 1.5rem;
+    color: $color-white;
+
+    @media (min-width: 900px) {
+      font-size: 5rem;
+    }
+  }
 }
 
 header {
@@ -80,22 +112,72 @@ header {
   }
 }
 
-h1 {
-  font-size: 5rem;
-  text-transform: uppercase;
-  border: 2px solid white;
+#leader {
+  text-align: center;
+  padding: 5rem 0 2.5rem 0;
+
+  h2 {
+    font-family: 'Josefin Sans';
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1;
+    text-transform: uppercase;
+    color: $color-black;
+    margin: 3rem 0 1.5rem 0;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
 }
 
 #creations {
+  font-family: 'Josefin Sans';
+  font-weight: 300;
+
   h3 {
-    font-size: 3rem;
-    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1;
     text-transform: uppercase;
+    text-align: center;
+    color: $color-black;
+    margin-bottom: 3rem;
   }
+
+  .see-all-btn {
+    display: flex;
+    justify-content: center;
+    margin: 2.25rem 0 5rem 0;
+  }
+
+  a {
+    font-family: 'Alata';
+    font-weight: 400;
+    font-size: 1.25rem;
+    letter-spacing: 3px;
+    // display: inline-block;
+    // margin: 2.25rem 0 5rem 0;
+    border: 2px solid $color-black;
+    padding: 0.5rem 3rem;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: black;
+      color: #fff;
+    }
+  }
+
   .card-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    align-items: stretch;
+    gap: 1.7rem;
+    border: 2px solid red;
+
+    @media (min-width: 900px) {
+      height: 95vh;
+    }
   }
 
   .creation__card {
@@ -106,42 +188,52 @@ h1 {
     padding: 2rem;
     height: 200px;
     color: white;
-    font-size: 2rem;
+    font-size: 1.75rem;
+    line-height: 1;
+    // max-height: 140px;
+
+    @media (min-width: 900px) {
+      height: 40vh;
+    }
 
     p {
       max-width: 150px;
     }
 
+    // background-size: auto 100%;
+    background-size: cover;
+    background-position: left bottom;
+
     &:nth-of-type(1) {
-      background-image: url("images/mobile/image-deep-earth.jpg");
+      background-image: url('images/mobile/image-deep-earth.jpg');
     }
 
     &:nth-of-type(2) {
-      background-image: url("images/mobile/image-night-arcade.jpg");
+      background-image: url('images/mobile/image-night-arcade.jpg');
     }
 
     &:nth-of-type(3) {
-      background-image: url("images/mobile/image-soccer-team.jpg");
+      background-image: url('images/mobile/image-soccer-team.jpg');
     }
 
     &:nth-of-type(4) {
-      background-image: url("images/mobile/image-grid.jpg");
+      background-image: url('images/mobile/image-grid.jpg');
     }
 
     &:nth-of-type(5) {
-      background-image: url("images/mobile/image-from-above.jpg");
+      background-image: url('images/mobile/image-from-above.jpg');
     }
 
     &:nth-of-type(6) {
-      background-image: url("images/mobile/image-pocket-borealis.jpg");
+      background-image: url('images/mobile/image-pocket-borealis.jpg');
     }
 
     &:nth-of-type(7) {
-      background-image: url("images/mobile/image-curiosity.jpg");
+      background-image: url('images/mobile/image-curiosity.jpg');
     }
 
     &:nth-of-type(8) {
-      background-image: url("images/mobile/image-fisheye.jpg");
+      background-image: url('images/mobile/image-fisheye.jpg');
     }
   }
 
@@ -165,8 +257,7 @@ footer {
   color: white;
   background-color: black;
   text-align: center;
-  padding: 3rem 1rem;
-  border: 2px solid red;
+  padding: 3.5rem 1rem;
 
   .footer__first {
   }
@@ -177,15 +268,20 @@ footer {
   ul {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    margin: 2rem 0;
+    gap: 1.7rem;
+    margin: 2.5rem 0 1.4rem 0;
   }
 
   .social-links {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.2rem;
     margin: 2rem;
+
+    img {
+      width: 28px;
+      height: 28px;
+    }
   }
 
   .copyright {
