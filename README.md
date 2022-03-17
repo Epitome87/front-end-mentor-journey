@@ -127,7 +127,17 @@ Still needs a little polishing on desktop view.
 
 ## Easybank Landing Page
 
-[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Junior/loopstudios-landing-page)
+[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Junior/easybank-landing-page)
+
+##### `Originally Completed: In Progress`
+
+Work in progress!
+
+(Image to come later)
+
+## URL Shortening API
+
+[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Intermediate/url-shortening-api)
 
 ##### `Originally Completed: In Progress`
 
