@@ -1,0 +1,197 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3rem;
+}
+
+:root {
+  /* TEXT */
+  --dark-blue-desat: hsl(238, 29%, 16%);
+  --dark-blue-gray: hsl(237, 12%, 33%);
+  --dark-grey-blue: hsl(240, 6%, 50%);
+  --soft-red: hsl(14, 88%, 65%);
+  /*BACKGROUND GRADIENT*/
+  --soft-violet: hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+  /*DIVIDERS*/
+  --light-grey-blue: hsl(240, 5%, 91%);
+  /*TYPOGRAPHY*/
+  font-size: 62.5%;
+  font-family: 'Kumbh Sans', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--soft-violet)), to(var(--soft-blue)));
+  background-image: linear-gradient(var(--soft-violet), var(--soft-blue));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 92rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #fff;
+  border-radius: 23px;
+  -webkit-box-shadow: 0 20px 30px #4a4b5e;
+          box-shadow: 0 20px 30px #4a4b5e;
+  margin-top: 5rem;
+}
+
+.media-desktop {
+  display: none;
+}
+
+.faq-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.faq-container h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 4rem;
+  color: darkblue;
+}
+
+.faq-item {
+  margin-top: 2rem;
+  border-bottom: 1px solid #e8e8ea;
+  color: darkblue;
+  font-size: 1.4rem;
+}
+
+.faq-accordion {
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: transparent;
+  border: transparent;
+  text-align: left;
+  padding: 0;
+  color: darkblue;
+  cursor: pointer;
+}
+
+.faq-accordion.active, .faq-accordion:hover {
+  color: #f47c57;
+}
+
+.faq-accordion::after {
+  content: url("images/icon-arrow-down.svg");
+  height: 13px;
+  width: 10px;
+}
+
+.faq-content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.active::after {
+  content: url("images/icon-arrow-down.svg");
+  height: 13px;
+  width: 10px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    /* margin: 7rem auto; */
+    padding: 4rem 0;
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -52rem -27rem;
+  }
+  .media,
+  .faq {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    /* overflow: hidden; */
+  }
+  .faq h1 {
+    text-align: left;
+  }
+  .accordion {
+    text-align: left;
+    margin-top: 6rem;
+    width: 75%;
+  }
+  .media-mobile {
+    display: none;
+  }
+  .media-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    margin-right: 7rem;
+  }
+  .box {
+    position: absolute;
+    top: 13rem;
+    left: -9.2rem;
+  }
+  .woman-desktop {
+    overflow: hidden;
+  }
+  .woman-desktop img {
+    margin-left: -8rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

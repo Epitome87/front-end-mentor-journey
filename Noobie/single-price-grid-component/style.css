@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+  background-color: #e5eff5;
+}
+
+.component {
+  background-color: #98a6bd;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  max-width: 600px;
+  width: 80vw;
+  height: 85vh;
+  margin: 5rem auto;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.component section {
+  padding: 1.5rem;
+}
+
+.component__community {
+  background-color: #fff;
+}
+
+.component__community .component__header {
+  color: #2ab2af;
+  margin: 0.5rem 0 1.5rem 0;
+  font-size: 1.1rem;
+}
+
+.component__community .component__subheader {
+  color: #c0df34;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.component__community .component__paragraph {
+  margin: 0.5rem 0;
+  color: #2ab2af;
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+}
+
+.component .component__subscription {
+  background-color: #2ab2af;
+}
+
+.component .component__subscription .component__header {
+  margin-bottom: 1rem;
+  font-size: 1.1erm;
+  color: #fff;
+}
+
+.component .component__subscription .component__subheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.component .component__subscription .component__subheader span {
+  color: #fff;
+  margin-right: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.component .component__subscription button {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3rem;
+  width: 100%;
+  text-align: center;
+  background-color: #c0df34;
+  color: #e5eff5;
+  border-radius: 0.5rem;
+  border: none;
+  -webkit-box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+  -webkit-transition: background-color 0.45s ease-in-out, color 0.45s ease-in-out;
+  transition: background-color 0.45s ease-in-out, color 0.45s ease-in-out;
+}
+
+.component .component__subscription button:hover {
+  background-color: #e5eff5;
+  color: #c4e920;
+}
+
+.component .component__subscription .component__paragraph {
+  margin-bottom: 2rem;
+  color: #e5eff5;
+}
+
+.component .component__why-us {
+  background-color: #1bc0bd;
+}
+
+.component .component__why-us .component__header {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #e5eff5;
+}
+
+.component .component__why-us .component__paragraph {
+  width: 75%;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  color: #e5eff5;
+}
+
+@media (min-width: 800px) {
+  .component {
+    max-height: 600px;
+    max-width: 900px;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 45% 55%;
+        grid-template-rows: 45% 55%;
+  }
+  .component__community {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+}
+/*# sourceMappingURL=style.css.map */

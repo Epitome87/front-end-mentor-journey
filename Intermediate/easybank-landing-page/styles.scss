@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
+$page-breakpoint-mobile: 760px;
+$page-breakpoint-tablet: 900px;
+$page-max-width: 1260px;
+
+$color-blue-dark: hsl(233, 26%, 24%);
+$color-green-lime: hsl(136, 65%, 51%);
+$color-cyan-bright: hsl(192, 70%, 51%);
+
+$color-gray-blue: hsl(233, 8%, 62%);
+$color-gray-blue-light: hsl(220, 16%, 96%);
+$color-gray-light: hsl(0, 0%, 98%);
+$color-white: hsl(0, 0%, 100%);
+
+$font-size: 1.125rem;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  color: $color-gray-blue;
+  line-height: 1.4;
+}
+
+//  Keep image within its container
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  max-width: $page-max-width;
+  margin: 0 auto;
+  padding: 2rem;
+  //   overflow: auto;
+}
+
+footer {
+  background-color: $color-blue-dark;
+  color: white;
+
+  .social-icons {
+    border: 2px solid red;
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  a {
+    color: white;
+  }
+}

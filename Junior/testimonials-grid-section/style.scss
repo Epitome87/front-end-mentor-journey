@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+$page-max-width: 1260px;
+
+$color-violet-md: hsl(263, 55%, 52%);
+$color-grayish-blue-dark: hsl(217, 19%, 35%);
+$color-blackish-blue-dark: hsl(219, 29%, 14%);
+$color-white: hsl(0, 0%, 100%);
+$color-gray-light: hsl(0, 0%, 81%);
+$color-grayish-blue-light: hsl(210, 46%, 95%);
+
+// 1. "Verified Graduate" has the same color as the person's name with 50% opacity
+// 2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: white;
+  line-height: 1.4;
+  background-color: $color-grayish-blue-light;
+}
+
+//  Keep image within its container
+img {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  max-width: $page-max-width;
+  margin: 0 auto;
+  padding: 1rem;
+  //   overflow: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  @media (min-width: 760px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+.card {
+  padding: 1.5rem;
+  border-radius: 10px;
+
+  .card__header-container {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .card__avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+  }
+
+  .card__author-container {
+  }
+
+  .card__author {
+  }
+
+  .card__verified {
+    color: rgba($color-white, 0.5);
+  }
+
+  .card__intro {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .card__testimony {
+    color: rgba($color-white, 0.7);
+  }
+}
+
+.card:nth-child(1) {
+  background-color: $color-violet-md;
+
+  @media (min-width: 760px) {
+    grid-column: 1 / span 2;
+  }
+}
+
+.card:nth-child(2) {
+  background-color: $color-grayish-blue-dark;
+  @media (min-width: 760px) {
+    grid-column: 3 / span 1;
+  }
+}
+
+.card:nth-child(3) {
+  color: $color-blackish-blue-dark;
+  background-color: $color-white;
+  box-shadow: 30px 10px 5px rgba(black, 0.1);
+
+  .card__verified {
+    color: rgba($color-blackish-blue-dark, 0.5);
+  }
+
+  .card__testimony {
+    color: rgba($color-blackish-blue-dark, 0.7);
+  }
+
+  @media (min-width: 760px) {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+}
+
+.card:nth-child(4) {
+  background-color: $color-blackish-blue-dark;
+  @media (min-width: 760px) {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+  }
+}
+
+.card:nth-child(5) {
+  color: $color-blackish-blue-dark;
+  background-color: $color-white;
+  box-shadow: 30px 10px 5px rgba(black, 0.1);
+
+  .card__verified {
+    color: rgba($color-blackish-blue-dark, 0.5);
+  }
+
+  .card__testimony {
+    color: rgba($color-blackish-blue-dark, 0.7);
+  }
+
+  @media (min-width: 760px) {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 2;
+  }
+}

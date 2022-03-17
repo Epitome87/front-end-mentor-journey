@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Poppins&display=swap');
+
+:root {
+  --clr-primary-blue: 215 51% 70%;
+  --clr-primary-cyan: 178 100% 50%;
+  --clr-blue-main: 217 54% 11%;
+  --clr-blue-card: 216 50% 16%;
+  --clr-blue-line: 215 32% 27%;
+  --clr-white: 0 0% 100%;
+  --fs-paragraph: 18px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  min-height: 100vh;
+  color: hsl(var(--clr-white) / 0.7);
+  background-color: hsl(var(--clr-blue-main));
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 80rem;
+  /* margin: auto; */
+  margin: 1rem 2rem;
+}
+
+.card {
+  background-color: hsl(var(--clr-blue-card));
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0px 20px 25px 15px rgba(0, 0, 0, 0.05),
+    0px 40px 30px 15px rgba(0, 0, 0, 0.1);
+
+  box-shadow: 0px 25px 25px 75px rgba(0, 0, 0, 0.025),
+    0px 30px 20px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card__image {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card__image::after {
+  content: url('images/icon-view.svg');
+  background-color: hsl(var(--clr-primary-cyan) / 0.5);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.card__image:hover::after {
+  opacity: 1;
+}
+
+.card h1 {
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.card h1:hover {
+  color: hsl(var(--clr-primary-cyan));
+  cursor: pointer;
+}
+
+.card h2 {
+  font-size: var(--fs-paragraph);
+  font-weight: 300;
+  line-height: 1.5;
+  color: hsl(var(--clr-white) / 0.5);
+  margin-bottom: 1.25rem;
+}
+
+.card__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid hsl(var(--clr-white) / 0.2);
+  margin-bottom: 1.25rem;
+}
+
+.card__price-container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.card__price-container img {
+  max-width: 25px;
+  max-height: 25px;
+}
+
+.card__price {
+  font-weight: 600;
+  color: hsl(var(--clr-primary-cyan));
+}
+
+.card__countdown-container {
+  font-weight: 400;
+  color: hsl(var(--clr-white) / 0.5);
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.card__countdown-container img {
+  max-width: 25px;
+  max-height: 25px;
+}
+
+.card__creator {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  color: hsl(var(--clr-white) / 0.5);
+}
+
+.card__creator img {
+  border: 2px solid white;
+  border-radius: 50%;
+  max-width: 40px;
+}
+
+.card__creator span {
+  color: hsl(var(--clr-white) / 1);
+}
+
+.card__creator span:hover {
+  color: hsl(var(--clr-primary-cyan));
+  cursor: pointer;
+}
+
+/* For Frontend Mentor's default footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
