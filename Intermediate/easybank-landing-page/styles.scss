@@ -27,6 +27,10 @@ body {
   font-family: 'Public Sans', sans-serif;
   font-size: $font-size;
   color: $color-gray-blue;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
@@ -48,22 +52,58 @@ a {
 .container {
   max-width: $page-max-width;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
   //   overflow: auto;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  margin-bottom: 1.5rem;
+  color: $color-white;
+  background: linear-gradient(to right, $color-green-lime, $color-cyan-bright);
+  border-radius: 100px;
+}
+
+header {
+  display: flex;
+
+  ul {
+    display: flex;
+  }
+}
+
+#hero {
+ text-align: center;
+ margin-block: 4rem;
+
+  h1 {
+    color: $color-blue-dark;
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+
+  p {
+    margin-block: 1.5rem;
+  }
+
+  .cta-button {
+    margin-bottom: 0;
+  }
 }
 
 #benefits {
   background-color: $color-gray-blue-light;
   text-align: center;
+  padding-block: 4rem;
 
   .benefits-heading {
-    padding: 1rem 0 3.25rem 0;
+    margin-bottom: 3rem;
 
     h2 {
       color: $color-blue-dark;
       font-size: 2rem;
       font-weight: 400;
-      line-height: 1.2;
       margin-bottom: 1rem;
     }
 
@@ -75,6 +115,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    // padding-block: 4rem;
   }
 
   .benefit {
@@ -97,9 +138,8 @@ a {
     color: $color-blue-dark;
     font-size: 2rem;
     font-weight: 400;
-    line-height: 1.2;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .article-container {
@@ -137,16 +177,46 @@ footer {
   background-color: $color-blue-dark;
   color: white;
   text-align: center;
+  padding-block: 2rem;
+  
+
+  .footer__logo {
+    margin-bottom: 2rem;
+  }
 
   .social-icons {
+    line-height: 0;
+
     img {
+      
       width: 30px;
       height: 30px;
       margin: 0 0.25rem;
     }
   }
 
+  nav ul {
+    margin-block: 2rem;
+  }
+
+  nav ul li {
+    margin-block: 0.5rem;
+  }
+
   a {
     color: white;
+  }
+
+  .cta-button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, $color-green-lime, $color-cyan-bright);
+    border-radius: 100px;
+  }
+
+  .copyright {
+    font-weight: 300;
+    color: $color-gray-blue;
   }
 }

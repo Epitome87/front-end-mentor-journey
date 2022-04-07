@@ -12,6 +12,10 @@ body {
   font-family: 'Public Sans', sans-serif;
   font-size: 1.125rem;
   color: #9698a6;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
@@ -32,23 +36,64 @@ a {
 .container {
   max-width: 1260px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  border-radius: 100px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#hero {
+  text-align: center;
+  margin-block: 4rem;
+}
+
+#hero h1 {
+  color: #2d314d;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+#hero p {
+  margin-block: 1.5rem;
+}
+
+#hero .cta-button {
+  margin-bottom: 0;
 }
 
 #benefits {
   background-color: #f3f4f6;
   text-align: center;
+  padding-block: 4rem;
 }
 
 #benefits .benefits-heading {
-  padding: 1rem 0 3.25rem 0;
+  margin-bottom: 3rem;
 }
 
 #benefits .benefits-heading h2 {
   color: #2d314d;
   font-size: 2rem;
   font-weight: 400;
-  line-height: 1.2;
   margin-bottom: 1rem;
 }
 
@@ -78,9 +123,8 @@ a {
   color: #2d314d;
   font-size: 2rem;
   font-weight: 400;
-  line-height: 1.2;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 #articles .article-container {
@@ -122,6 +166,15 @@ footer {
   background-color: #2d314d;
   color: white;
   text-align: center;
+  padding-block: 2rem;
+}
+
+footer .footer__logo {
+  margin-bottom: 2rem;
+}
+
+footer .social-icons {
+  line-height: 0;
 }
 
 footer .social-icons img {
@@ -130,7 +183,29 @@ footer .social-icons img {
   margin: 0 0.25rem;
 }
 
+footer nav ul {
+  margin-block: 2rem;
+}
+
+footer nav ul li {
+  margin-block: 0.5rem;
+}
+
 footer a {
   color: white;
+}
+
+footer .cta-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  margin-bottom: 1.5rem;
+  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  border-radius: 100px;
+}
+
+footer .copyright {
+  font-weight: 300;
+  color: #9698a6;
 }
 /*# sourceMappingURL=styles.css.map */
