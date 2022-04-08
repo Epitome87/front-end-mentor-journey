@@ -27,28 +27,40 @@
   </head>
   <body>
     <header>
-      easyBankPic
-      <nav>
-        <ul>
+      <nav class="nav-bar">
+        <a class="nav-logo" href="#">
+          <img src="images/logo.svg" alt="" />
+        </a>
+        <button>
+          <img class="nav-hamburger" src="images/icon-hamburger.svg" alt="" />
+        </button>
+        <ul class="nav-menu">
           <li><a href="">Home</a></li>
           <li><a href="">About</a></li>
           <li><a href="">Contact</a></li>
           <li><a href="">Blog</a></li>
           <li><a href="">Careers</a></li>
-          <li><a href="">Request Invite</a></li>
+          <li>
+            <a class="cta-button" href="">Request Invite</a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section id="hero">
-        <h1>Next generation digital banking</h1>
-        <p>
-          Take your financial life online. Your Easybank account will be a
-          one-stop-shop for spending, saving, budgeting, investing, and much
-          more.
-        </p>
-        <a class="cta-button" href="">Request Invite</a>
+        <div class="hero__image">
+          <img src="images/image-mockups.png" alt="" />
+        </div>
+        <div class="hero__text">
+          <h1>Next generation digital banking</h1>
+          <p>
+            Take your financial life online. Your Easybank account will be a
+            one-stop-shop for spending, saving, budgeting, investing, and much
+            more.
+          </p>
+          <a class="cta-button" href="">Request Invite</a>
+        </div>
       </section>
 
       <section id="benefits">
@@ -169,7 +181,7 @@
           <li><a href="">Privacy Policy</a></li>
         </ul>
       </nav>
-      <a class='cta-button' href="">Request Invite</a>
+      <a class="cta-button" href="">Request Invite</a>
       <p class="copyright">© Easybank. All Rights Reserved</p>
     </footer>
 
@@ -180,5 +192,7 @@
       >. Coded by
       <a href="https://github.com/Epitome87">Matthew McGrath</a> &copy; 2022.
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
