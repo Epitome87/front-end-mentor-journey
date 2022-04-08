@@ -2,7 +2,7 @@
 
 $page-breakpoint-mobile: 760px;
 $page-breakpoint-tablet: 900px;
-$page-max-width: 1260px;
+$page-max-width: 1150px;
 
 $color-blue-dark: hsl(233, 26%, 24%);
 $color-green-lime: hsl(136, 65%, 51%);
@@ -28,6 +28,10 @@ body {
   font-size: $font-size;
   color: $color-gray-blue;
   line-height: 1.5;
+
+  // Prevent scrolling due to desktop hero background sizing
+  // TODO: Maybe find a better way to implement hero background instead?
+  overflow-x: hidden;
 }
 
 h1,
@@ -92,11 +96,9 @@ header {
 
     flex-wrap: wrap;
     padding: 1.5rem;
-    border: 2px solid red;
 
     .nav-logo {
       line-height: 0;
-      border: 2px solid green;
     }
 
     ul {
@@ -113,7 +115,6 @@ header {
       display: flex;
       flex-direction: column;
       width: 100%;
-      border: 2px solid red;
       align-items: center;
 
       .cta-button {
@@ -164,18 +165,39 @@ header {
   // margin-block: 4rem;
   padding-bottom: 4rem;
 
-  // Attempting background image layout - mobile
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background-image: url(images/bg-intro-mobile.svg);
-  background-size: contain;
-  background-position-y: top -50px;
-  background-repeat: no-repeat;
+  .hero__image {
+    position: relative;
+    min-height: 275px;
+    background-image: url(images/bg-intro-mobile.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-  // We shift the child image upwards, so we need to hide it
-  overflow: hidden;
+  .hero__image::after {
+    content: '';
+    position: absolute;
+    background-image: url(images/image-mockups.png);
+    background-size: 92%;
+    background-repeat: no-repeat;
+    background-position: center 92%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  // .hero__image::before {
+  //   content: '';
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-image: url('images/bg-intro-desktop.svg');
+  //   background-size: 93%;
+  //   background-repeat: no-repeat;
+  //   background-position: center bottom;
+  //   border: 2px solid green;
+  // }
 
   img {
     position: relative;
@@ -187,25 +209,50 @@ header {
 
   @media screen and (min-width: 880px) {
     // Attempting background image layout - desktop
-    flex-flow: row-reverse nowrap;
-    background-image: url('images/bg-intro-desktop.svg');
-    background-size: 90%;
-    justify-content: center;
+    padding-bottom: 0;
 
-    .hero__image {
-      // scale: 1.15;
-      // position: relative;
-      // top: -5vh;
-      // right: -5%;
-      // flex-basis: 30%;
-      flex-basis: 55%;
-      border: 2px solid red;
-    }
+    .container {
+      display: flex;
+      flex-flow: row-reverse nowrap;
+      align-items: center;
+      text-align: left;
 
-    .hero__text {
-      flex-basis: 60%;
-      border: 2px solid red;
-      flex-basis: 35%;
+      .hero__image {
+        flex: 3;
+        min-height: 650px;
+        // background-image: url(images/bg-intro-desktop.svg);
+        background-image: none;
+        background-position: left center;
+      }
+
+      .hero__image::before {
+        content: '';
+        position: absolute;
+        background-image: url(images/bg-intro-desktop.svg);
+        background-position: 0% 78%;
+        background-repeat: no-repeat;
+        background-size: 122%;
+        // left: 5%;
+        // top: 0%;
+        width: 150%;
+        height: 100%;
+      }
+
+      .hero__image::after {
+        content: '';
+        position: absolute;
+        background-image: url(images/image-mockups.png);
+        background-position: center 85%;
+        background-size: 95%;
+        left: 25%;
+        top: 0;
+        width: 120%;
+        height: 120%;
+      }
+
+      .hero__text {
+        flex: 2;
+      }
     }
   }
 
@@ -229,8 +276,16 @@ header {
   text-align: center;
   padding-block: 4rem;
 
+  @media screen and (min-width: 880px) {
+    text-align: left;
+  }
+
   .benefits-heading {
     margin-bottom: 3rem;
+
+    @media screen and (min-width: 880px) {
+      max-width: 650px;
+    }
 
     h2 {
       color: $color-blue-dark;
@@ -248,6 +303,10 @@ header {
     flex-direction: column;
     gap: 2rem;
     // padding-block: 4rem;
+
+    @media screen and (min-width: 880px) {
+      flex-direction: row;
+    }
   }
 
   .benefit {
@@ -272,17 +331,32 @@ header {
     font-weight: 400;
     text-align: center;
     margin-bottom: 2rem;
+
+    @media screen and (min-width: 880px) {
+      text-align: left;
+    }
   }
 
   .article-container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    @media screen and (min-width: 880px) {
+      flex-direction: row;
+    }
   }
 
   article {
     background-color: $color-white;
     padding-bottom: 2rem;
+    border-radius: 5px;
+
+    img {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      width: 100%;
+    }
   }
 
   .article__author {
@@ -311,12 +385,40 @@ footer {
   text-align: center;
   padding-block: 2rem;
 
+  @media screen and (min-width: 880px) {
+    .container {
+      text-align: left;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr) 2fr;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas:
+        'logo links1 links2 cta'
+        'socials links1 links2 cta';
+    }
+
+    // align-items: center;
+    // justify-items: start;
+    // align-content: center;
+    // justify-content: center;
+  }
+
   .footer__logo {
     margin-bottom: 2rem;
+
+    @media screen and (min-width: 880px) {
+      grid-area: logo;
+      align-self: start;
+      margin-bottom: 0;
+    }
   }
 
   .social-icons {
     line-height: 0;
+
+    @media screen and (min-width: 880px) {
+      grid-area: socials;
+      align-self: end;
+    }
 
     img {
       width: 30px;
@@ -325,32 +427,78 @@ footer {
     }
   }
 
-  nav ul {
-    margin-block: 2rem;
-  }
+  // nav ul {
+  //   margin-block: 2rem;
+  // }
 
-  nav ul li {
-    margin-block: 0.5rem;
-  }
-
+  // nav ul li {
+  //   margin-block: 0.5rem;
+  // }
   a {
     color: white;
   }
 
-  .cta-button {
-    display: inline-block;
-    padding: 0.75rem 2rem;
-    margin-bottom: 1.5rem;
-    background: linear-gradient(
-      to right,
-      $color-green-lime,
-      $color-cyan-bright
-    );
-    border-radius: 100px;
+  .footer__links {
+    // margin-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+    @media screen and (min-width: 880px) {
+      // Change justification
+      justify-content: space-between;
+      // Remove margin
+      margin-block: 0;
+      // Horizontally center this div within its Grid Cell
+      justify-self: center;
+      // Vertically center this div within its Grid Cell
+      align-self: space-between;
+    }
+
+    a {
+      display: block;
+    }
   }
 
-  .copyright {
-    font-weight: 300;
-    color: $color-gray-blue;
+  .column1 {
+    margin-top: 2rem;
+    grid-area: links1;
+    @media screen and (min-width: 880px) {
+      margin-top: 0;
+    }
+  }
+
+  .column2 {
+    margin-bottom: 2rem;
+    grid-area: links2;
+    @media screen and (min-width: 880px) {
+      margin-bottom: 0;
+    }
+  }
+
+  .footer__cta {
+    @media screen and (min-width: 880px) {
+      grid-area: cta;
+      justify-self: end;
+      text-align: right;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(
+        to right,
+        $color-green-lime,
+        $color-cyan-bright
+      );
+      border-radius: 100px;
+    }
+
+    .copyright {
+      font-weight: 300;
+      color: $color-gray-blue;
+    }
   }
 }
