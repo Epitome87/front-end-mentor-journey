@@ -8,5 +8,75 @@
 body {
   margin: 0;
   padding: 0;
+  color: white;
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: white;
+  padding: 2rem 1rem;
+  border-radius: 25px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.cta-button:hover {
+  -webkit-text-fill-color: white;
+  color: white;
+  background-color: #ff8f70;
+}
+
+.cta-button--secondary {
+  background-color: transparent;
+  color: white;
+  outline: 1px solid white;
+}
+
+.header {
+  background: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d4d));
+  background: linear-gradient(to right, #ff8f70, #ff3d4d);
+}
+
+.hero {
+  background: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d4d));
+  background: linear-gradient(to right, #ff8f70, #ff3d4d);
+}
+
+.section1 h2,
+.section1 h3 {
+  color: #1f3f5b;
+}
+
+.section1 p {
+  color: #4b5862;
+}
+
+.section2 {
+  background: -webkit-gradient(linear, left top, right top, from(#3f4164), to(#2c2d3f));
+  background: linear-gradient(to right, #3f4164, #2c2d3f);
+}
+
+.section3 h3 {
+  color: #1f3f5b;
+}
+
+.section3 p {
+  color: #4b5862;
+}
+
+.footer {
+  background-color: #25252d;
 }
 /*# sourceMappingURL=style.css.map */

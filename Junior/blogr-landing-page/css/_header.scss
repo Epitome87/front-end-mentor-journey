@@ -1,0 +1,8 @@
+// TODO: Header may actually have to be combined with Hero, as they  share a background gradient and image
+.header {
+  background: linear-gradient(
+    to right,
+    $color-gradient-red-start,
+    $color-gradient-red-end
+  );
+}

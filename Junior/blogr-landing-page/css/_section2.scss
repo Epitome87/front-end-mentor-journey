@@ -1,0 +1,16 @@
+// Section 2 - "STate of the Art Infastructure"
+// Relatively simple section - two column layout (left: image, right: header with paragraph) with background image under them
+
+.section2 {
+  background: linear-gradient(
+    to right,
+    $color-gradient-blue-start,
+    $color-gradient-blue-end
+  );
+
+  &__image {
+  }
+
+  &__text {
+  }
+}

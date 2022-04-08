@@ -5,8 +5,52 @@
 }
 
 body {
-    
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
+  // Most text is white -- this will help make re-defining color simpler
+  color: $color-white;
+
+  // ALL text on Mobile is centered
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: $max-width;
+  padding: 1rem;
+}
+
+// Transparent text on white background
+.cta-button {
+  display: inline-block;
+  background-color: $color-white;
+  padding: 2rem 1rem;
+  border-radius: 25px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+  // Turn text white, background light red
+  &:hover {
+    -webkit-text-fill-color: $color-white;
+    // -webkit-background-clip: text;
+    color: $color-white;
+    background-color: $color-red-2;
+  }
+
+  &--secondary {
+    background-color: transparent;
+    color: $color-white;
+    outline: 1px solid $color-white;
+
+    // White text on transparent background
+    &:hover {
+      // Turn background white, text light red (or transparent?)
+    }
+  }
 }

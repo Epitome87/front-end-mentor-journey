@@ -19,6 +19,8 @@ $color-gradient-blue-start: hsl(237, 23%, 32%);
 $color-gradient-blue-end: hsl(237, 17%, 21%);
 
 // Breakpoints
+$max-width: 1200px;
+
 $breakpoints: (
   sm: 499px,
   md: 899px,

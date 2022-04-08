@@ -1,0 +1,13 @@
+// Section 1 - "Designed for the future"
+// This section and Section 3 share a lot of similiarities -- perhaps share styles?
+
+.section1 {
+  h2,
+  h3 {
+    color: $color-blue-3;
+  }
+
+  p {
+    color: $color-blue-2;
+  }
+}
