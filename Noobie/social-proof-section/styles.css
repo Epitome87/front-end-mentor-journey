@@ -9,9 +9,17 @@
 }
 
 body {
-  font-family: "Spartan", sans-serif;
+  min-height: 100vh;
+  font-family: 'Spartan', sans-serif;
   color: white;
   line-height: 1.4;
+  background: url("images/bg-pattern-top-mobile.svg") no-repeat left top, url("./images/bg-pattern-bottom-mobile.svg") no-repeat right bottom;
+}
+
+@media (min-width: 760px) {
+  body {
+    background: url("images/bg-pattern-top-desktop.svg") no-repeat left top, url("./images/bg-pattern-bottom-desktop.svg") no-repeat right bottom;
+  }
 }
 
 img {
@@ -184,9 +192,18 @@ a {
   padding: 3rem 2rem;
   border-radius: 10px;
   position: relative;
-  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
   line-height: 1.6;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+#testimonials .card:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 0 7px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 7px 10px rgba(0, 0, 0, 0.4);
 }
 
 #testimonials .card .card__header {

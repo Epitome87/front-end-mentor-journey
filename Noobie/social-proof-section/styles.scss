@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
 
 $page-breakpoint-mobile: 760px;
 $page-breakpoint-tablet: 900px;
@@ -20,9 +20,18 @@ $font-size: 0.9375rem;
 }
 
 body {
-  font-family: "Spartan", sans-serif;
+  min-height: 100vh;
+  font-family: 'Spartan', sans-serif;
   color: white;
   line-height: 1.4;
+
+  background: url('images/bg-pattern-top-mobile.svg') no-repeat left top,
+    url('./images/bg-pattern-bottom-mobile.svg') no-repeat right bottom;
+
+  @media (min-width: $page-breakpoint-mobile) {
+    background: url('images/bg-pattern-top-desktop.svg') no-repeat left top,
+      url('./images/bg-pattern-bottom-desktop.svg') no-repeat right bottom;
+  }
 }
 
 //  Keep image within its container
@@ -156,8 +165,15 @@ a {
     padding: 3rem 2rem;
     border-radius: 10px;
     position: relative;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
     line-height: 1.6;
+
+    transition: 0.2s ease-in;
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 7px 10px rgba(0, 0, 0, 0.4);
+    }
 
     .card__header {
       display: flex;
