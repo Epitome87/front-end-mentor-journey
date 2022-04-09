@@ -5,13 +5,25 @@
     $color-gradient-red-end
   );
   border-bottom-left-radius: 75px;
+  padding-block: 5rem;
 
   h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 1.2;
+    margin-bottom: 1rem;
   }
 
   p {
     font-size: 1.2rem;
+    // color: $color-blue-1;
+    opacity: 0.5;
+    margin-bottom: 1.5rem;
+  }
+
+  &__buttons {
+    // Just displaying flex for easy gap
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
   }
 }

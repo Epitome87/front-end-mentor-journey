@@ -17,6 +17,9 @@ body {
 
   // ALL text on Mobile is centered
   text-align: center;
+
+  // For absolutely-positioned images that hang out of bounds -- find better solution:
+  overflow-x: hidden;
 }
 
 img {
@@ -40,29 +43,38 @@ ul {
 
 // Transparent text on white background
 .cta-button {
+  font-family: inherit;
+  font-weight: 600;
   display: inline-block;
   background-color: $color-white;
-  padding: 2rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 25px;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  color: $color-red-1;
 
   // Turn text white, background light red
   &:hover {
     -webkit-text-fill-color: $color-white;
     // -webkit-background-clip: text;
     color: $color-white;
-    background-color: $color-red-2;
+    background-color: $color-red-1;
   }
 
   &--secondary {
-    background-color: transparent;
+    font-family: inherit;
+    font-weight: 600;
+    display: inline-block;
+    // background-color: transparent;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    // background-color: transparent;
     color: $color-white;
     outline: 1px solid $color-white;
 
     // White text on transparent background
     &:hover {
       // Turn background white, text light red (or transparent?)
+      background-color: $color-white;
+      color: $color-red-2;
     }
   }
 }

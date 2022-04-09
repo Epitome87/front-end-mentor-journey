@@ -42,8 +42,17 @@
 
   &__text {
     @include breakpoint(lg) {
-      flex: 2;
+      text-align: left;
+
+      flex: 1;
       padding-block: 4rem;
     }
+  }
+
+  &__header {
+    margin-bottom: 1rem;
+  }
+
+  &__body {
   }
 }

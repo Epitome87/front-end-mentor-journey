@@ -2,6 +2,7 @@
 // This section and Section 1 share a lot of similiarities -- perhaps share styles?
 
 .section3 {
+  padding-block: 15rem;
   @include breakpoint(lg) {
     text-align: left;
   }
