@@ -128,13 +128,13 @@ Still needs a little polishing on desktop view.
 
 ## Easybank Landing Page
 
-[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Junior/easybank-landing-page)
+[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Intermediate/easybank-landing-page)
 
-##### `Originally Completed: In Progress`
+##### `Originally Completed: 4/09/2022`
 
-Work in progress!
+Navbar could be better.
 
-(Image to come later)
+<img src="Preview Images/preview-easybank-landing-page.png" width="800px">
 
 ## URL Shortening API
 
