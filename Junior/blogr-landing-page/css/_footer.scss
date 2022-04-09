@@ -1,9 +1,52 @@
 .footer {
   background-color: $color-blue-4;
+  border-top-right-radius: 75px;
+  padding-block: 3rem;
+
+  a {
+    color: $color-blue-1;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(md) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-right: 5rem;
+    }
+  }
 
   &__logo {
+    margin-bottom: 3.5rem;
   }
 
   &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @include breakpoint(md) {
+      flex-direction: row;
+      gap: 10rem;
+    }
+  }
+
+  &__header {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    // gap: 4rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }

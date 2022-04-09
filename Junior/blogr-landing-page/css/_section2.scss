@@ -2,15 +2,48 @@
 // Relatively simple section - two column layout (left: image, right: header with paragraph) with background image under them
 
 .section2 {
-  background: linear-gradient(
-    to right,
-    $color-gradient-blue-start,
-    $color-gradient-blue-end
-  );
+  background: url('/images/bg-pattern-circles.svg') no-repeat -10% -50% / 50%
+      100%,
+    linear-gradient(
+      to right,
+      $color-gradient-blue-start,
+      $color-gradient-blue-end
+    );
+  border-top-right-radius: 75px;
+  border-bottom-left-radius: 75px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(lg) {
+      flex-direction: row;
+      gap: 4rem;
+      align-items: center;
+      position: relative;
+    }
+  }
 
   &__image {
+    @include breakpoint(lg) {
+      flex: 1;
+
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        // height: 300px;
+        // width: 600px;
+        transform-origin: top;
+        transform: scale(0.5);
+      }
+    }
   }
 
   &__text {
+    @include breakpoint(lg) {
+      flex: 2;
+      padding-block: 4rem;
+    }
   }
 }

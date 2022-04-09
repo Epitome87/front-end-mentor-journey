@@ -1,3 +1,17 @@
 .hero {
-  background: linear-gradient(to right, $color-gradient-red-start, $color-gradient-red-end);
+  background: linear-gradient(
+    to right,
+    $color-gradient-red-start,
+    $color-gradient-red-end
+  );
+  border-bottom-left-radius: 75px;
+
+  h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
 }

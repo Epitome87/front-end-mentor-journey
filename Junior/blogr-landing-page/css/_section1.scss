@@ -2,12 +2,55 @@
 // This section and Section 3 share a lot of similiarities -- perhaps share styles?
 
 .section1 {
-  h2,
-  h3 {
-    color: $color-blue-3;
+  color: $color-blue-3;
+
+  // All text (except Section Header) becomes left-aligned
+  @include breakpoint(lg) {
+    text-align: left;
   }
 
-  p {
+  &__header {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    @include breakpoint(lg) {
+      text-align: center;
+    }
+  }
+
+  .article__header {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .article__body {
     color: $color-blue-2;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(lg) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    @include breakpoint(lg) {
+      // Make the image the second column
+      order: 1;
+      flex: 1;
+    }
+  }
+
+  &__articles {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    @include breakpoint(lg) {
+      flex: 1;
+    }
   }
 }

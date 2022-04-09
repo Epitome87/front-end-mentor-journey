@@ -2,9 +2,13 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
+  font-family: $font-body;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
 
@@ -15,9 +19,17 @@ body {
   text-align: center;
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   color: white;
   text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .container {
