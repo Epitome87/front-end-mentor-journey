@@ -18,6 +18,7 @@ Here you will find my attempts at completing the various challenges found on Fro
 |     12      | [Social Proof Section](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie/social-proof-section)                         | [Demo](https://epitome87.github.io/front-end-mentor-journey/Noobie/social-proof-section)              |
 |     13      | [Loopstudios Landing Page](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Junior/loopstudios-landing-page)                 | [Demo](https://epitome87.github.io/front-end-mentor-journey/Junior/loopstudios-landing-page)          |
 |     14      | [Easybank Landing Page](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Intermediate/easybank-landing-page)                 | [Demo](https://epitome87.github.io/front-end-mentor-journey/Intermediate/easybank-landing-page)       |
+|     15      | [URL Shortening API](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Intermediate/url-shortening-api)                       | [Demo](https://epitome87.github.io/front-end-mentor-journey/Intermediate/url-shortening-api)          |
 
 ## Intro Component With Signup Form
 
