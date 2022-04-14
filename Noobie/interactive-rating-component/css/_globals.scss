@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+
+  color: $color-white;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: $max-width;
+  padding: 1rem;
+}
+
+// Submit Button
+button {
+  font-family: inherit;
+  display: inline-block;
+  color: $color-white;
+  background-color: $color-primary;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+
+  // Turn text orange, background white
+  &focus, &:hover {
+    color: $color-primary;
+    background-color: $color-white;
+  }
+}
