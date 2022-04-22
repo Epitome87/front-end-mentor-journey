@@ -74,11 +74,7 @@ a {
   border-radius: 100px;
 
   &:hover {
-    background: linear-gradient(
-      to right,
-      hsl(136, 65%, 71%),
-      hsl(192, 70%, 81%)
-    );
+    background: linear-gradient(to right, hsl(136, 65%, 71%), hsl(192, 70%, 81%));
   }
 }
 
@@ -122,16 +118,13 @@ header {
       }
     }
 
-    li {
+    // We don't want this underline effect on last child (CTA Button)
+    li:not(:last-child) {
       border-bottom: 5px solid transparent;
       border-image-slice: 1;
 
       &:hover {
-        border-image-source: linear-gradient(
-          to right,
-          hsl(136, 65%, 71%),
-          hsl(192, 70%, 81%)
-        );
+        border-image-source: linear-gradient(to right, hsl(136, 65%, 71%), hsl(192, 70%, 81%));
       }
     }
 
@@ -356,26 +349,34 @@ header {
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
       width: 100%;
+
+      @media screen and (min-width: 880px) {
+        height: 200px;
+      }
     }
-  }
 
-  .article__author {
-    font-size: 0.75rem;
-    margin: 0.75rem 0;
-    padding: 0 2rem;
-  }
+    a:hover {
+      color: $color-green-lime;
+    }
 
-  .article__title {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: $color-blue-dark;
-    padding: 0 2rem;
-  }
+    .article__author {
+      font-size: 0.75rem;
+      margin: 0.75rem 0;
+      padding: 0 2rem;
+    }
 
-  .article__body {
-    margin-top: 0.75rem;
-    font-size: 1rem;
-    padding: 0 2rem;
+    .article__title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: $color-blue-dark;
+      padding: 0 2rem;
+    }
+
+    .article__body {
+      margin-top: 0.75rem;
+      font-size: 1rem;
+      padding: 0 2rem;
+    }
   }
 }
 
@@ -400,6 +401,10 @@ footer {
     // justify-items: start;
     // align-content: center;
     // justify-content: center;
+  }
+
+  a:hover {
+    color: $color-green-lime;
   }
 
   .footer__logo {
@@ -470,9 +475,11 @@ footer {
   }
 
   .column2 {
+    margin-top: 0.5rem;
     margin-bottom: 2rem;
     grid-area: links2;
     @media screen and (min-width: 880px) {
+      margin-top: 0;
       margin-bottom: 0;
     }
   }
@@ -488,11 +495,7 @@ footer {
       display: inline-block;
       padding: 0.75rem 2rem;
       margin-bottom: 1.5rem;
-      background: linear-gradient(
-        to right,
-        $color-green-lime,
-        $color-cyan-bright
-      );
+      background: linear-gradient(to right, $color-green-lime, $color-cyan-bright);
       border-radius: 100px;
     }
 
