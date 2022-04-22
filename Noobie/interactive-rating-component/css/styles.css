@@ -11,6 +11,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -63,10 +68,17 @@ button:focus, button:hover {
 
 .card {
   margin: 0 auto;
-  padding: 2rem;
-  max-width: 400px;
+  padding: 1rem;
+  max-width: 300px;
   background-color: #252d37;
   border-radius: 20px;
+}
+
+@media screen and (min-width: 499px) {
+  .card {
+    padding: 2rem;
+    max-width: 400px;
+  }
 }
 
 .card__heading {
@@ -114,17 +126,25 @@ button:focus, button:hover {
   cursor: pointer;
   border-radius: 50%;
   background-color: #29323d;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
   text-align: center;
+}
+
+@media screen and (min-width: 499px) {
+  .card--rate .rating {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
 }
 
 .card--rate .rating:focus {
   background-color: #959eac;
 }
 
-.card--rate .rating:hover {
+.card--rate .rating:hover, .card--rate .rating.selected {
   background-color: #fb7413;
 }
 

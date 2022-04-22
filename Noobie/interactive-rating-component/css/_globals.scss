@@ -8,6 +8,8 @@
 
 body {
   display: flex;
+  flex-direction: column;
+  gap: 5rem;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -46,7 +48,8 @@ button {
   border-radius: 25px;
 
   // Turn text orange, background white
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     color: $color-primary;
     background-color: $color-white;
   }
