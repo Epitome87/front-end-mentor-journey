@@ -3,17 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
-    <link rel="stylesheet" href="style.css" />
-    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Social Media Dashboard</title>
 
     <style>
       .attribution {
@@ -28,7 +21,7 @@
     </style>
   </head>
   <body>
-    <div class="flex">
+    <div class="flex-col">
       <div>
         <h1>Social Media Dashboard</h1>
         <div>Total Followers: 23,004</div>
@@ -45,43 +38,159 @@
       </div>
     </div>
 
-    <!-- Socials -->
-    <section id="socials" class="flex-col">
-      <article class="container">
+    <!-- Socials Section -->
+    <section class="socials-section container flex-col">
+      <!-- Facebook Article -->
+      <article class="social-article">
         <div class="name-container">
-          <div>**</div>
-          <div>@nathanf</div>
+          <img src="images/icon-facebook.svg" alt="Facebook logo" />
+          <p>@nathanf</p>
         </div>
         <div class="followers-count">1987</div>
         <div class="followers-text">Followers</div>
-        <div class="followers-detal">12 Today</div>
+        <div class="followers-delta">12 Today</div>
       </article>
 
-      <article class="container">@nathanf 1044 Followers 99 Today</article>
-      <article class="container">@realnathanf 11k Followers 1099 Today</article>
-      <article class="container">Nathan F. 8239 Subscribers 144 Today</article>
+      <!-- Twitter Article -->
+      <article class="social-article">
+        <div class="name-container">
+          <img src="images/icon-twitter.svg" alt="Twitter logo" />
+          <p>@nathanf</p>
+        </div>
+        <div class="followers-count">1044</div>
+        <div class="followers-text">Followers</div>
+        <div class="followers-delta">99 Today</div>
+      </article>
+
+      <!-- Instagram Article -->
+      <article class="social-article">
+        <div class="name-container">
+          <img src="images/icon-instagram.svg" alt="Instagram logo" />
+          <p>@realnathanf</p>
+        </div>
+        <div class="followers-count">11k</div>
+        <div class="followers-text">Followers</div>
+        <div class="followers-delta">1099 Today</div>
+      </article>
+
+      <!-- Youtube Article -->
+      <article class="social-article">
+        <div class="name-container">
+          <img src="images/icon-youtube.svg" alt="Youtube logo" />
+          <p>Nathan F.</p>
+        </div>
+        <div class="followers-count">8239</div>
+        <div class="followers-text">Subscribers</div>
+        <div class="followers-delta">144 Today</div>
+      </article>
     </section>
 
     <!-- Overview - Today  -->
-    <section id="overview">
+    <section class="overview-section container">
       <h2>Overview - Today</h2>
-      <div>
-        <article>Page Views 87 3%</article>
-        <article>Likes 52 2%</article>
-        <article>Likes 5462 2257%</article>
-        <article>Profile Views 52k 1375%</article>
-        <article>Retweets 117 303%</article>
-        <article>Likes 507 553%</article>
-        <article>Likes 107 19%</article>
-        <article>Total Views 1407 12%</article>
+
+      <div class="overview-container flex-col">
+        <!-- Overview 1 -->
+        <article class="overview-article">
+          <div class="overview-top">
+            <p>Page Views</p>
+            <img src="images/icon-facebook.svg" alt="Facebook icon" />
+          </div>
+          <div class="overview-bottom">
+            <p>87</p>
+            <p>3%</p>
+          </div>
+        </article>
+
+        <!-- Overview 2 -->
+        <article class="overview-article">
+          <div class="overview-top">
+            <p>Likes</p>
+            <img src="images/icon-facebook.svg" alt="Facebook icon" />
+          </div>
+          <div class="overview-bottom">
+            <p>52</p>
+            <p>2%</p>
+          </div>
+        </article>
+
+        <!-- Overview 3 -->
+        <article class="overview-article">
+          <div class="overview-top">
+            <p>Likes</p>
+            <img src="images/icon-instagram.svg" alt="Instagram icon" />
+          </div>
+          <div class="overview-bottom">
+            <p>5462</p>
+            <p>2257%</p>
+          </div>
+        </article>
+
+        <!-- Overview 4 -->
+        <article class="overview-article">
+          <div class="overview-top">
+            <p>Profile Views</p>
+            <img src="images/icon-facebook.svg" alt="Instagram icon" />
+          </div>
+          <div class="overview-bottom">
+            <p>52k</p>
+            <p>1375%</p>
+          </div>
+        </article>
+
+        <!-- Overview 5 -->
+        <article class="overview-article">
+          <div class="overview-top">
+            <p>Retweets</p>
+            <img src="images/icon-twitter.svg" alt="Twitter icon" />
+          </div>
+          <div class="overview-bottom">
+            <p>117</p>
+            <p>303%</p>
+          </div>
+        </article>
+
+        <!-- Overview 6 -->
+        <article class="overview-article">
+          <div class="overview-top">
+            <p>Likes</p>
+            <img src="images/icon-twitter.svg" alt="Twitter icon" />
+          </div>
+          <div class="overview-bottom">
+            <p>507</p>
+            <p>553%</p>
+          </div>
+        </article>
+
+        <!-- Overview 7 -->
+        <article class="overview-article">
+          <div class="overview-top">
+            <p>Likes</p>
+            <img src="images/icon-youtube.svg" alt="Youtube icon" />
+          </div>
+          <div class="overview-bottom">
+            <p>107</p>
+            <p>19%</p>
+          </div>
+        </article>
+
+        <!-- Overview 8 -->
+        <article class="overview-article">
+          <div class="overview-top">
+            <p>Total Views</p>
+            <img src="images/icon-youtube.svg" alt="Youtube icon" />
+          </div>
+          <div class="overview-bottom">
+            <p>1407</p>
+            <p>12%</p>
+          </div>
+        </article>
       </div>
     </section>
 
     <div class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
       <a href="https://github.com/Epitome87">Matthew McGrath</a> &copy; 2022.
     </div>
 
