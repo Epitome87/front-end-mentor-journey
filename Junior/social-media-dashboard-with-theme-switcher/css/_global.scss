@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-body;
+  font-size: $font-size-text;
+  line-height: 1.6;
+  background-color: $color-background;
+  color: white;
+}
+
+//  Keep image within its container
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: $max-width;
+  padding: 1rem;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}

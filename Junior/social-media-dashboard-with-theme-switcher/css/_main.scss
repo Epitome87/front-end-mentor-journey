@@ -1,0 +1,90 @@
+.socials-section {
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  @include breakpoint(md) {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+.social-article {
+  background-color: $color-card-background;
+  width: 400px;
+  border-top: 5px solid blue;
+  padding: 2rem;
+  border-radius: 5px;
+  text-align: center;
+
+  // Could also just make the image and p inside this container inline elements or spans
+  .name-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: $color-text-primary;
+  }
+
+  .followers-count {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .followers-text {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: $color-text-primary;
+  }
+
+  .followers-delta {
+  }
+}
+
+.overview-section .overview-container {
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  @include breakpoint(md) {
+    flex-flow: row wrap;
+    align-items: stretch;
+  }
+}
+
+.overview-article {
+  background-color: $color-card-background;
+  width: 400px;
+  padding: 2rem;
+  border-radius: 5px;
+
+  .overview-top,
+  .overview-bottom {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .overview-top {
+    color: $color-text-primary;
+    margin-bottom: 2rem;
+  }
+
+  .overview-bottom {
+    :first-child {
+      font-size: 2rem;
+    }
+  }
+}
+
+/*
+      <article class="social-article">
+        <div class="name-container">
+          <img src="images/icon-youtube.svg" alt="Youtube logo" />
+          <pNathan F.</p>
+        </div>
+        <div class="followers-count">8239</div>
+        <div class="followers-text">Subscribers</div>
+        <div class="followers-delta">144 Today</div>
+      </article>
+*/

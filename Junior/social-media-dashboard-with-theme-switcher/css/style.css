@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter";
+  font-size: 0.875rem;
+  line-height: 1.6;
+  background-color: #1e202a;
+  color: white;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1rem;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.socials-section {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 899px) {
+  .socials-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+}
+
+.social-article {
+  background-color: #252a41;
+  width: 400px;
+  border-top: 5px solid blue;
+  padding: 2rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.social-article .name-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  color: #8b97c6;
+}
+
+.social-article .followers-count {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.social-article .followers-text {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #8b97c6;
+}
+
+.overview-section .overview-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 899px) {
+  .overview-section .overview-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+}
+
+.overview-article {
+  background-color: #252a41;
+  width: 400px;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.overview-article .overview-top,
+.overview-article .overview-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overview-article .overview-top {
+  color: #8b97c6;
+  margin-bottom: 2rem;
+}
+
+.overview-article .overview-bottom :first-child {
+  font-size: 2rem;
+}
+
+/*
+      <article class="social-article">
+        <div class="name-container">
+          <img src="images/icon-youtube.svg" alt="Youtube logo" />
+          <pNathan F.</p>
+        </div>
+        <div class="followers-count">8239</div>
+        <div class="followers-text">Subscribers</div>
+        <div class="followers-delta">144 Today</div>
+      </article>
+*/
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+$themes: (
+  darkTheme: (
+    'color-background': hsl(230, 17%, 14%),
+    'color-background-top': hsl(232, 19%, 15%),
+    'color-card-background': hsl(228, 28%, 20%),
+    'color-text-primary': hsl(228, 34%, 66%),
+    'color-text-secondary': hsl(0, 0%, 100%),
+  ),
+  lightTheme: (
+    'color-background': hsl(0, 0%, 100%),
+    'color-background-top': hsl(225, 100%, 98%),
+    'color-card-background': hsl(227, 47%, 96%),
+    'color-text-primary': hsl(228, 12%, 44%),
+    'color-text-secondary': hsl(230, 17%, 14%),
+    'color-toggle': hsl(230, 22%, 74%),
+  ),
+);
+
+$font-body: 'Inter';
+$font-size-text: 0.875rem;
+
+// Light theme (default) variables
+// Primary colors
+$color-lime-green: hsl(163, 72%, 41%);
+$color-bright-red: hsl(356, 69%, 56%);
+$color-facebook: hsl(208, 92%, 53%);
+$color-twitter: hsl(203, 89%, 53%);
+// // - Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%)
+$color-youtube: hsl(348, 97%, 39%);
+
+// // Exclusive to Light Theme
+// $color-background: hsl(0, 0%, 100%);
+// $color-background-top: hsl(225, 100%, 98%);
+// $color-card-background: hsl(227, 47%, 96%);
+// $color-text-primary: hsl(228, 12%, 44%);
+// $color-text-secondary: hsl(230, 17%, 14%);
+// $color-toggle: hsl(230, 22%, 74%);
+$color-background: hsl(230, 17%, 14%);
+$color-background-top: hsl(232, 19%, 15%);
+$color-card-background: hsl(228, 28%, 20%);
+$color-text-primary: hsl(228, 34%, 66%);
+$color-text-secondary: hsl(0, 0%, 100%);
+
+// Breakpoints
+$max-width: 1200px;
+
+$breakpoints: (
+  sm: 499px,
+  md: 899px,
+  lg: 999px,
+  xl: 1399px,
+);
+
+// Mixin for media queries -- mobile-first
+@mixin breakpoint($size) {
+  $breakpoint-value: map-get($breakpoints, $size);
+
+  @media screen and (min-width: $breakpoint-value) {
+    @content;
+  }
+}
