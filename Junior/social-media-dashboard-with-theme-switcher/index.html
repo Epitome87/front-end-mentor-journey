@@ -21,19 +21,18 @@
     </style>
   </head>
   <body>
-    <div class="flex-col">
-      <div>
-        <h1>Social Media Dashboard</h1>
-        <div>Total Followers: 23,004</div>
+    <div class="intro flex-col container">
+      <div class="intro-text-container flex-col">
+        <h1 class="intro-header">Social Media Dashboard</h1>
+        <p class="intro-total">Total Followers: 23,004</p>
       </div>
-      <div>
+      <div class="theme-container flex-row">
         <div>Dark Mode</div>
         <div class="theme-switch-wrapper">
           <label class="theme-switch" for="checkbox">
             <input type="checkbox" id="checkbox" />
             <div class="slider round"></div>
           </label>
-          <em>Enable Dark Mode!</em>
         </div>
       </div>
     </div>
@@ -87,7 +86,7 @@
 
     <!-- Overview - Today  -->
     <section class="overview-section container">
-      <h2>Overview - Today</h2>
+      <h2 class="overview-header">Overview - Today</h2>
 
       <div class="overview-container flex-col">
         <!-- Overview 1 -->
