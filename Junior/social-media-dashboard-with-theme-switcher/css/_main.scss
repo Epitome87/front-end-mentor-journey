@@ -22,6 +22,7 @@
 }
 
 .social-article, .overview-article {
+  background-color: $color-card-background;
   width: 300px;
   
   &:hover {
@@ -44,11 +45,33 @@
 .social-article {
   font-weight: 700;
   line-height: 1;
-  background-color: $color-card-background;
-  border-top: 5px solid blue;
   padding: 2rem;
   border-radius: 5px;
   text-align: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $color-instagram-gradient;
+  }
+
+  &:first-child::after {
+    background: $color-facebook;
+  }
+  &:nth-child(2)::after {
+    background: $color-twitter;
+  }
+  &:nth-child(3)::after {
+    background: $color-instagram-gradient;
+  }
+  &:last-child::after {
+    background: $color-youtube;
+  }
 
   // Could also just make the image and p inside this container inline elements or spans
   .name-container {
@@ -95,7 +118,6 @@
 .overview-article {
   line-height: 1;
   font-weight: 700;
-  background-color: $color-card-background;
   padding: 1.5rem;
   border-radius: 5px;
 
@@ -120,4 +142,12 @@
       font-size: 0.75rem;
     }
   }
+}
+
+.delta-up {
+  color: $color-lime-green;
+}
+
+.delta-down {
+  color: $color-bright-red;
 }
