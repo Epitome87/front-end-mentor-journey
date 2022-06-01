@@ -46,7 +46,7 @@ Here you will find my attempts at completing the various challenges found on Fro
 
 ## Huddle Landing Page
 
-[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Noobie/huddle-landing-page-with-single-introductory-section)
+[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Noobie/huddle-landing-page)
 
 ##### `Originally Completed: 9/05/2021`
 
