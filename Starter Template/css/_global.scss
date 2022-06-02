@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-body;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+
+  // Most text is white -- this will help make re-defining color simpler
+  color: $color-white;
+
+  // ALL text on Mobile is centered
+  text-align: center;
+
+  // For absolutely-positioned images that hang out of bounds -- find better solution:
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: $max-width;
+  padding: 1rem;
+}
+
+// Found from Tailwind docs
+.screenreader-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
