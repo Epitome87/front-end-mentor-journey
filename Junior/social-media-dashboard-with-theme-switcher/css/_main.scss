@@ -1,3 +1,36 @@
+.intro {
+  @include breakpoint(md) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &-text-container {
+    
+  }
+  &-header {
+
+  }
+
+  &-total {
+    color: $color-text-primary;
+  }
+}
+
+.theme-container {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-article, .overview-article {
+  background-color: $color-card-background;
+  width: 300px;
+  
+  &:hover {
+    background-color: $color-background * 1.5;
+    cursor: pointer;
+  }
+}
+
 .socials-section {
   align-items: center;
   justify-content: center;
@@ -10,12 +43,35 @@
 }
 
 .social-article {
-  background-color: $color-card-background;
-  width: 400px;
-  border-top: 5px solid blue;
+  font-weight: 700;
+  line-height: 1;
   padding: 2rem;
   border-radius: 5px;
   text-align: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $color-instagram-gradient;
+  }
+
+  &:first-child::after {
+    background: $color-facebook;
+  }
+  &:nth-child(2)::after {
+    background: $color-twitter;
+  }
+  &:nth-child(3)::after {
+    background: $color-instagram-gradient;
+  }
+  &:last-child::after {
+    background: $color-youtube;
+  }
 
   // Could also just make the image and p inside this container inline elements or spans
   .name-container {
@@ -23,17 +79,21 @@
     justify-content: center;
     gap: 1rem;
     color: $color-text-primary;
+    margin-bottom: 1.5rem;
   }
 
   .followers-count {
     font-size: 3rem;
     font-weight: 700;
+    margin-bottom: 0.75rem;
   }
 
   .followers-text {
+    font-weight: 300;
     letter-spacing: 5px;
     text-transform: uppercase;
     color: $color-text-primary;
+    margin-bottom: 1.5rem;
   }
 
   .followers-delta {
@@ -51,10 +111,14 @@
   }
 }
 
+.overview-header {
+  margin-bottom: 1rem;
+}
+
 .overview-article {
-  background-color: $color-card-background;
-  width: 400px;
-  padding: 2rem;
+  line-height: 1;
+  font-weight: 700;
+  padding: 1.5rem;
   border-radius: 5px;
 
   .overview-top,
@@ -67,24 +131,23 @@
 
   .overview-top {
     color: $color-text-primary;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .overview-bottom {
     :first-child {
-      font-size: 2rem;
+      font-size: 1.5rem;
+    }
+    :last-child {
+      font-size: 0.75rem;
     }
   }
 }
 
-/*
-      <article class="social-article">
-        <div class="name-container">
-          <img src="images/icon-youtube.svg" alt="Youtube logo" />
-          <pNathan F.</p>
-        </div>
-        <div class="followers-count">8239</div>
-        <div class="followers-text">Subscribers</div>
-        <div class="followers-delta">144 Today</div>
-      </article>
-*/
+.delta-up {
+  color: $color-lime-green;
+}
+
+.delta-down {
+  color: $color-bright-red;
+}

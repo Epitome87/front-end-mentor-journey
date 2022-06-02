@@ -41,9 +41,21 @@ ul {
   padding: 1rem;
 }
 
+// Found from Tailwindcss docs
+.screenreader-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 // Transparent text on white background
 .cta-button {
-  font-family: inherit;
+  font-family: $font-heading;
   font-weight: 600;
   display: inline-block;
   background-color: $color-white;
@@ -60,7 +72,7 @@ ul {
   }
 
   &--secondary {
-    font-family: inherit;
+    font-family: $font-heading;
     font-weight: 600;
     display: inline-block;
     // background-color: transparent;

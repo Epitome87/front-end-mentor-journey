@@ -21,11 +21,18 @@
     </style>
   </head>
   <body>
-    <main>
-      <div class="flex-col">
-        <div>
-          <h1>Social Media Dashboard</h1>
-          <div>Total Followers: 23,004</div>
+    <div class="intro flex-col container">
+      <div class="intro-text-container flex-col">
+        <h1 class="intro-header">Social Media Dashboard</h1>
+        <p class="intro-total">Total Followers: 23,004</p>
+      </div>
+      <div class="theme-container flex-row">
+        <div>Dark Mode</div>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
         </div>
         <div>
           <div>Dark Mode</div>
@@ -39,17 +46,68 @@
         </div>
       </div>
 
-      <!-- Socials Section -->
-      <section class="socials-section container flex-col">
-        <!-- Facebook Article -->
-        <article class="social-article">
-          <div class="name-container">
-            <img src="images/icon-facebook.svg" alt="Facebook logo" />
-            <p>@nathanf</p>
+    <!-- Socials Section -->
+    <section class="socials-section container flex-col">
+      <!-- Facebook Article -->
+      <article class="social-article">
+        <div class="name-container">
+          <img src="images/icon-facebook.svg" alt="Facebook logo" />
+          <p>@nathanf</p>
+        </div>
+        <div class="followers-count">1987</div>
+        <div class="followers-text">Followers</div>
+        <div class="followers-delta delta-up">12 Today</div>
+      </article>
+
+      <!-- Twitter Article -->
+      <article class="social-article">
+        <div class="name-container">
+          <img src="images/icon-twitter.svg" alt="Twitter logo" />
+          <p>@nathanf</p>
+        </div>
+        <div class="followers-count">1044</div>
+        <div class="followers-text">Followers</div>
+        <div class="followers-delta delta-up">99 Today</div>
+      </article>
+
+      <!-- Instagram Article -->
+      <article class="social-article">
+        <div class="name-container">
+          <img src="images/icon-instagram.svg" alt="Instagram logo" />
+          <p>@realnathanf</p>
+        </div>
+        <div class="followers-count">11k</div>
+        <div class="followers-text">Followers</div>
+        <div class="followers-delta delta-up">1099 Today</div>
+      </article>
+
+      <!-- Youtube Article -->
+      <article class="social-article">
+        <div class="name-container">
+          <img src="images/icon-youtube.svg" alt="Youtube logo" />
+          <p>Nathan F.</p>
+        </div>
+        <div class="followers-count">8239</div>
+        <div class="followers-text">Subscribers</div>
+        <div class="followers-delta delta-down">144 Today</div>
+      </article>
+    </section>
+
+    <!-- Overview - Today  -->
+    <section class="overview-section container">
+      <h2 class="overview-header">Overview - Today</h2>
+
+      <div class="overview-container flex-col">
+        <!-- Overview 1 -->
+        <article class="overview-article">
+          <div class="overview-top">
+            <p>Page Views</p>
+            <img src="images/icon-facebook.svg" alt="Facebook icon" />
           </div>
-          <div class="followers-count">1987</div>
-          <div class="followers-text">Followers</div>
-          <div class="followers-delta">12 Today</div>
+          <div class="overview-bottom">
+            <p>87</p>
+            <p class="delta-up">3%</p>
+          </div>
         </article>
 
         <!-- Twitter Article -->
@@ -58,9 +116,10 @@
             <img src="images/icon-twitter.svg" alt="Twitter logo" />
             <p>@nathanf</p>
           </div>
-          <div class="followers-count">1044</div>
-          <div class="followers-text">Followers</div>
-          <div class="followers-delta">99 Today</div>
+          <div class="overview-bottom">
+            <p>52</p>
+            <p class="delta-down">2%</p>
+          </div>
         </article>
 
         <!-- Instagram Article -->
@@ -69,9 +128,10 @@
             <img src="images/icon-instagram.svg" alt="Instagram logo" />
             <p>@realnathanf</p>
           </div>
-          <div class="followers-count">11k</div>
-          <div class="followers-text">Followers</div>
-          <div class="followers-delta">1099 Today</div>
+          <div class="overview-bottom">
+            <p>5462</p>
+            <p class="delta-up">2257%</p>
+          </div>
         </article>
 
         <!-- Youtube Article -->
@@ -80,52 +140,62 @@
             <img src="images/icon-youtube.svg" alt="Youtube logo" />
             <p>Nathan F.</p>
           </div>
-          <div class="followers-count">8239</div>
-          <div class="followers-text">Subscribers</div>
-          <div class="followers-delta">144 Today</div>
+          <div class="overview-bottom">
+            <p>52k</p>
+            <p class="delta-up">1375%</p>
+          </div>
         </article>
       </section>
 
-      <!-- Overview - Today  -->
-      <section class="overview-section container">
-        <h2>Overview - Today</h2>
+        <!-- Overview 5 -->
+        <article class="overview-article">
+          <div class="overview-top">
+            <p>Retweets</p>
+            <img src="images/icon-twitter.svg" alt="Twitter icon" />
+          </div>
+          <div class="overview-bottom">
+            <p>117</p>
+            <p class="delta-up">303%</p>
+          </div>
+        </article>
 
-        <div class="overview-container flex-col">
-          <!-- Overview 1 -->
-          <article class="overview-article">
-            <div class="overview-top">
-              <p>Page Views</p>
-              <img src="images/icon-facebook.svg" alt="Facebook icon" />
-            </div>
-            <div class="overview-bottom">
-              <p>87</p>
-              <p>3%</p>
-            </div>
-          </article>
+        <!-- Overview 6 -->
+        <article class="overview-article">
+          <div class="overview-top">
+            <p>Likes</p>
+            <img src="images/icon-twitter.svg" alt="Twitter icon" />
+          </div>
+          <div class="overview-bottom">
+            <p>507</p>
+            <p class="delta-up">553%</p>
+          </div>
+        </article>
 
-          <!-- Overview 2 -->
-          <article class="overview-article">
-            <div class="overview-top">
-              <p>Likes</p>
-              <img src="images/icon-facebook.svg" alt="Facebook icon" />
-            </div>
-            <div class="overview-bottom">
-              <p>52</p>
-              <p>2%</p>
-            </div>
-          </article>
+        <!-- Overview 7 -->
+        <article class="overview-article">
+          <div class="overview-top">
+            <p>Likes</p>
+            <img src="images/icon-youtube.svg" alt="Youtube icon" />
+          </div>
+          <div class="overview-bottom">
+            <p>107</p>
+            <p class="delta-down">19%</p>
+          </div>
+        </article>
 
-          <!-- Overview 3 -->
-          <article class="overview-article">
-            <div class="overview-top">
-              <p>Likes</p>
-              <img src="images/icon-instagram.svg" alt="Instagram icon" />
-            </div>
-            <div class="overview-bottom">
-              <p>5462</p>
-              <p>2257%</p>
-            </div>
-          </article>
+        <!-- Overview 8 -->
+        <article class="overview-article">
+          <div class="overview-top">
+            <p>Total Views</p>
+            <img src="images/icon-youtube.svg" alt="Youtube icon" />
+          </div>
+          <div class="overview-bottom">
+            <p>1407</p>
+            <p class="delta-down">12%</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
           <!-- Overview 4 -->
           <article class="overview-article">
