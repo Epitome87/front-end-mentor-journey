@@ -1,14 +1,10 @@
-// Section 2 - "STate of the Art Infastructure"
-// Relatively simple section - two column layout (left: image, right: header with paragraph) with background image under them
+@use 'variables' as *;
 
+// Section 2 - "State of the Art Infrastructure"
+// Relatively simple section - two column layout (left: image, right: header with paragraph) with background image under them
 .section2 {
-  background: url('/images/bg-pattern-circles.svg') no-repeat -10% -50% / 50%
-      100%,
-    linear-gradient(
-      to right,
-      $color-gradient-blue-start,
-      $color-gradient-blue-end
-    );
+  background: url('/images/bg-pattern-circles.svg') no-repeat -10% -50% / 50% 100%,
+    linear-gradient(to right, $color-gradient-blue-start, $color-gradient-blue-end);
   border-top-right-radius: 75px;
   border-bottom-left-radius: 75px;
 

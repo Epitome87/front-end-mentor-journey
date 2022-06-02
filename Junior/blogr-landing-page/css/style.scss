@@ -1,8 +1,9 @@
-@import "variables";
-@import "global";
-@import "header";
-@import "hero";
-@import "section1";
-@import "section2";
-@import "section3";
-@import "footer";
+@forward 'variables';
+@forward 'global';
+@forward 'header';
+@forward 'hero';
+@forward 'section1';
+@forward 'section2';
+@forward 'section3';
+@forward 'footer';
+@forward 'attribution';

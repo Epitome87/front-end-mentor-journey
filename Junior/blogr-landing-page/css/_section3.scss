@@ -1,6 +1,7 @@
-// Section 3 - "Free, open,simple / Powerful tooling"
-// This section and Section 1 share a lot of similiarities -- perhaps share styles?
+@use 'variables' as *;
 
+// Section 3 - "Free, open,simple / Powerful tooling"
+// This section and Section 1 share a lot of similarities -- perhaps share styles?
 .section3 {
   padding-block: 15rem;
   @include breakpoint(lg) {

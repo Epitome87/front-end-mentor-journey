@@ -1,5 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@forward 'attribution';
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 $page-max-width: 1260px;
 
@@ -25,12 +27,12 @@ $color-white: hsl(0, 0%, 100%);
 $font-size: 0.875rem;
 
 // - Headings, Call-to-actions, Header Navigation
-$font-family: "Raleway";
+$font-family: 'Raleway';
 $font-weight-400: 400;
 $font-weight-700: 700;
 
 // - Body
-$font-family-main: "Open Sans";
+$font-family-main: 'Open Sans';
 
 *,
 *::before,
@@ -41,7 +43,7 @@ $font-family-main: "Open Sans";
 }
 
 body {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   color: white;
   line-height: 1.4;
   background-color: $color-blue-dark;

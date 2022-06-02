@@ -1,9 +1,7 @@
+@use 'variables' as *;
+
 .hero {
-  background: linear-gradient(
-    to right,
-    $color-gradient-red-start,
-    $color-gradient-red-end
-  );
+  background: linear-gradient(to right, $color-gradient-red-start, $color-gradient-red-end);
   border-bottom-left-radius: 75px;
   padding-block: 5rem;
 

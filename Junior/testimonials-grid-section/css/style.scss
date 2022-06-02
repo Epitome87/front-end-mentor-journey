@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+@forward 'attribution';
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
 
 $page-max-width: 1260px;
 
@@ -21,7 +23,7 @@ $color-grayish-blue-light: hsl(210, 46%, 95%);
 }
 
 body {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   color: white;
   line-height: 1.4;
   background-color: $color-grayish-blue-light;
