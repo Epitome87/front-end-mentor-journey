@@ -1,0 +1,171 @@
+@forward 'attribution';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+:root {
+  /* TEXT */
+  --dark-blue-desat: hsl(238, 29%, 16%);
+  --dark-blue-gray: hsl(237, 12%, 33%);
+  --dark-grey-blue: hsl(240, 6%, 50%);
+  --soft-red: hsl(14, 88%, 65%);
+  /*BACKGROUND GRADIENT*/
+  --soft-violet: hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+  /*DIVIDERS*/
+  --light-grey-blue: hsl(240, 5%, 91%);
+  /*TYPOGRAPHY*/
+  font-size: 62.5%;
+  font-family: 'Kumbh Sans', sans-serif;
+  box-sizing: border-box;
+  background-image: linear-gradient(var(--soft-violet), var(--soft-blue));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+// Container around all the design content
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 92rem;
+  height: fit-content;
+  background-color: #fff;
+  border-radius: 23px;
+  box-shadow: 0 20px 30px hsla(237, 12%, 33%, 60%);
+  margin-top: 5rem;
+}
+
+.media-desktop {
+  display: none;
+}
+
+.faq-container {
+  max-width: 600px;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+    color: darkblue;
+  }
+}
+
+// The overall individual FAW item (including it's button/"question", collapse/uncollapse icon, and revealed content
+.faq-item {
+  margin-top: 2rem;
+  border-bottom: 1px solid #e8e8ea;
+  color: darkblue;
+  font-size: 1.4rem;
+}
+
+//   The Button / "Question" of the FAQ item
+.faq-accordion {
+  font-size: 2rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  border: transparent;
+  text-align: left;
+  padding: 0;
+  color: darkblue;
+  cursor: pointer;
+
+  &.active,
+  &:hover {
+    color: hsl(14, 88%, 65%);
+  }
+
+  &::after {
+    content: url('images/icon-arrow-down.svg');
+    height: 13px;
+    width: 10px;
+    // float: right;
+  }
+}
+
+// The accordion panel. Hidden by default
+.faq-content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.active::after {
+  content: url('images/icon-arrow-down.svg');
+  height: 13px;
+  width: 10px;
+  transform: rotate(180deg);
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    /* margin: 7rem auto; */
+    padding: 4rem 0;
+    background-image: url('images/bg-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -52rem -27rem;
+  }
+
+  .media,
+  .faq {
+    flex: 1;
+    /* overflow: hidden; */
+  }
+
+  .faq h1 {
+    text-align: left;
+  }
+
+  .accordion {
+    text-align: left;
+    margin-top: 6rem;
+    width: 75%;
+  }
+
+  .media-mobile {
+    display: none;
+  }
+
+  .media-desktop {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 7rem;
+  }
+
+  .box {
+    position: absolute;
+    top: 13rem;
+    left: -9.2rem;
+  }
+
+  .woman-desktop {
+    overflow: hidden;
+  }
+
+  .woman-desktop img {
+    margin-left: -8rem;
+  }
+}

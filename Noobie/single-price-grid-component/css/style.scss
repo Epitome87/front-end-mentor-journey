@@ -1,0 +1,148 @@
+@forward 'attribution';
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+// Colors
+$color-primary-cyan: hsl(179, 62%, 43%);
+$color-primary-cyan-bright: hsl(179, 75%, 43%);
+$color-primary-yellow: hsl(71, 73%, 54%);
+$color-primary-yellow-bright: hsl(71, 82%, 52%);
+
+$color-neutral-gray-light: hsl(204, 43%, 93%);
+$color-neutral-gray-blue: hsl(218, 22%, 67%);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+  background-color: $color-neutral-gray-light;
+}
+
+.component {
+  background-color: $color-neutral-gray-blue;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  max-width: 600px;
+  width: 80vw;
+  height: 85vh;
+  margin: 5rem auto;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 10px 10px rgba(black, 0.5);
+
+  section {
+    padding: 1.5rem;
+  }
+
+  &__community {
+    background-color: #fff;
+
+    .component__header {
+      color: $color-primary-cyan;
+      margin: 0.5rem 0 1.5rem 0;
+      font-size: 1.1rem;
+    }
+
+    .component__subheader {
+      color: $color-primary-yellow;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .component__paragraph {
+      margin: 0.5rem 0;
+      color: $color-primary-cyan;
+      font-size: 0.8rem;
+      line-height: 1.6rem;
+    }
+  }
+
+  .component__subscription {
+    background-color: $color-primary-cyan;
+
+    .component__header {
+      margin-bottom: 1rem;
+      font-size: 1.1erm;
+      color: #fff;
+    }
+
+    .component__subheader {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      font-weight: 400;
+      color: rgba(#fff, 0.5);
+
+      span {
+        color: #fff;
+        margin-right: 1rem;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+    }
+
+    button {
+      cursor: pointer;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 3rem;
+      width: 100%;
+      text-align: center;
+      background-color: $color-primary-yellow;
+      color: $color-neutral-gray-light;
+      border-radius: 0.5rem;
+      border: none;
+      box-shadow: 0 0.5rem 0.5rem rgba(black, 0.25);
+      transition: background-color 0.45s ease-in-out, color 0.45s ease-in-out;
+
+      &:hover {
+        background-color: $color-neutral-gray-light;
+        color: $color-primary-yellow-bright;
+      }
+    }
+
+    .component__paragraph {
+      margin-bottom: 2rem;
+      color: $color-neutral-gray-light;
+    }
+  }
+
+  .component__why-us {
+    background-color: $color-primary-cyan-bright;
+
+    .component__header {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      color: hsl(204, 43%, 93%);
+    }
+
+    .component__paragraph {
+      width: 75%;
+      line-height: 1.5rem;
+      font-size: 0.9rem;
+      color: hsl(204, 43%, 93%);
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .component {
+    max-height: 600px;
+    max-width: 900px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 45% 55%;
+
+    &__community {
+      grid-column: 1/3;
+    }
+  }
+}

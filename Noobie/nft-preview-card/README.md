@@ -1,6 +1,6 @@
-# Frontend Mentor - 3-column preview card component solution
+# Frontend Mentor - NFT Preview Card Component solution
 
-This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [NFT Preview Card Component](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -16,8 +16,6 @@ This is a solution to the [3-column preview card component challenge on Frontend
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -29,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](../../Preview%20Images/preview-3-column-preview-card-component.png)
+![](../../Preview%20Images/preview-nft-preview-card.png)
 
 ### Links
 
-- Solution URL: [https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie/3-column-preview-card-component](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie/3-column-preview-card-component)
-- Live Site URL: [https://epitome87.github.io/front-end-mentor-journey/Noobie/3-column-preview-card-component/](https://epitome87.github.io/front-end-mentor-journey/Noobie/3-column-preview-card-component/)
+- Solution URL: [https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie/nft-preview-card](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie/nft-preview-card)
+- Live Site URL: [https://epitome87.github.io/front-end-mentor-journey/Noobie/nft-preview-card/](https://epitome87.github.io/front-end-mentor-journey/Noobie/nft-preview-card/)
 
 ## My process
 
@@ -60,4 +58,4 @@ Users should be able to:
 
 ## Acknowledgments
 
-Completed independently on 9/30/2021
+Completed independently on ?/??/2021
