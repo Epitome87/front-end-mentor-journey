@@ -16,8 +16,6 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -32,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+![](../../Preview%20Images/preview-base-apparel-coming-soon.png)
 
 ### Links
 
@@ -44,16 +42,22 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- SCSS with variables and mixins
+- CSS
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ### What I learned
 
 ### Continued development
 
+During this challenge, I had some struggles with the layout. Not only does it shift and re-order from mobile to desktop, but the hero image is not contained (no margins, not centered). Yet my HTML markup limited the image to exist within a container that was providing margin and horizontal centering to its other children. The (bad) solution was to simply give the image some negative left and right margins
+
+With more thoughtful HTML planning, I probably would have had more parent containers rather than a singular flex container for all elements.
+
 ### Useful resources
+
+The following was a useful Stack Overflow thread that helped me develop the Regex logic to help with email validation:
+`https://stackoverflow.com/questions/46155/how-can-i-validate-an-email-address-in-javascript`
 
 ## Author
 
@@ -63,4 +67,4 @@ Users should be able to:
 
 ## Acknowledgments
 
-In Progress!
+Completed independently on 6/02/2022
