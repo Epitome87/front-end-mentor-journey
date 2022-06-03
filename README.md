@@ -20,7 +20,8 @@ Here you will find my attempts at completing the various challenges found on Fro
 |     14      | [Loopstudios Landing Page](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Junior/loopstudios-landing-page)                 | [Demo](https://epitome87.github.io/front-end-mentor-journey/Junior/loopstudios-landing-page)          |
 |     15      | [Easybank Landing Page](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Intermediate/easybank-landing-page)                 | [Demo](https://epitome87.github.io/front-end-mentor-journey/Intermediate/easybank-landing-page)       |
 |     16      | [Interactive Rating Component](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie/interactive-rating-component)         | [Demo](https://epitome87.github.io/front-end-mentor-journey/Noobie/interactive-rating-component)      |
-|     17      | [URL Shortening API](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Intermediate/url-shortening-api)                       | [Demo](https://epitome87.github.io/front-end-mentor-journey/Intermediate/url-shortening-api)          |
+|     17      | [Base ApparelI](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Intermediate/url-shortening-api)                            | [Demo](https://epitome87.github.io/front-end-mentor-journey/Noobie/base-apparel-coming-soon)          |
+|     18      | [URL Shortening API](https://github.com/Epitome87/front-end-mentor-journey/tree/main/Noobie/base-apparel-coming-soon)                       | [Demo](https://epitome87.github.io/front-end-mentor-journey/Intermediate/url-shortening-api)          |
 
 ## NFT Preview Card
 
@@ -153,6 +154,14 @@ Navbar could be better.
 ##### `Originally Completed: 4/21/2022`
 
 <img src="Preview Images/preview-interactive-rating-component.png" width="800px">
+
+## Base Apparel
+
+[View My Attempt Here!](https://epitome87.github.io/front-end-mentor-journey/Noobie/base-apparel-coming-soon)
+
+##### `Originally Completed: 6/02/2022`
+
+<img src="Preview Images/preview-base-apparel-coming-soon.png" width="800px">
 
 ## URL Shortening API
 
